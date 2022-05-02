@@ -1,24 +1,364 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokreni skener" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-ux-1Iq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-vm-Yq8">
+                                <rect key="frame" x="108" y="380" width="159" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pokreni skener">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startScannerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFw-dT-HAt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nF2-ux-1Iq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JEc-yt-Ouo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nF2-ux-1Iq" secondAttribute="trailing" id="Xkj-M9-mAC"/>
+                            <constraint firstItem="nF2-ux-1Iq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZEA-q7-51B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nF2-ux-1Iq" secondAttribute="bottom" id="nBZ-YN-h6G"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="-194.19642857142856"/>
+        </scene>
+        <!--ScannerVC-->
+        <scene sceneID="NJ6-RC-mCZ">
+            <objects>
+                <viewController id="P90-6U-1hR" customClass="ScannerVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhS-hl-zdX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-hD-XRB">
+                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xsf-Uf-hd9"/>
+                                    <constraint firstAttribute="width" constant="375" id="kq0-l4-oQ3"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Gallery" width="126.5" id="YvK-Ki-EJa">
+                                        <imageReference key="image" image="photo.on.rectangle.fill" catalog="system" symbolScale="large"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="galleryButtonTapped:" destination="P90-6U-1hR" id="OSB-em-y8M"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Shutter" width="121.5" id="GuH-2O-lQM">
+                                        <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="large"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="shutterButtonTapped:" destination="P90-6U-1hR" id="L6r-PB-upC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Rotate" width="121.5" id="8bJ-9c-9We">
+                                        <imageReference key="image" image="arrow.triangle.2.circlepath.camera.fill" catalog="system" symbolScale="large"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="rotateButtonTapped:" destination="P90-6U-1hR" id="Byb-LV-5Jr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwk-lc-75d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7sR-kT-KSv"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LVk-hD-XRB" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" id="0CY-47-sYd"/>
+                            <constraint firstItem="LVk-hD-XRB" firstAttribute="bottom" secondItem="7sR-kT-KSv" secondAttribute="bottom" id="B7z-jl-5Wo"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="top" secondItem="7sR-kT-KSv" secondAttribute="top" id="QXu-1h-T5U"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="Wr5-hU-r93"/>
+                            <constraint firstItem="LVk-hD-XRB" firstAttribute="trailing" secondItem="7sR-kT-KSv" secondAttribute="trailing" id="aeO-hj-4ad"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="trailing" secondItem="7sR-kT-KSv" secondAttribute="trailing" id="fLp-tA-ycQ"/>
+                            <constraint firstItem="LVk-hD-XRB" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="oYN-pR-Ojp"/>
+                            <constraint firstItem="LVk-hD-XRB" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" id="yeh-mB-CPi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="clG-QL-AH1">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="Xv8-GL-8h7">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="P90-6U-1hR" id="czP-lJ-H1N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraView" destination="hwk-lc-75d" id="wWd-7w-tb1"/>
+                        <segue destination="HZC-ue-79N" kind="show" identifier="ShowEditVC" id="g43-5f-kN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbU-Xb-CG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="484.40779610194909"/>
+        </scene>
+        <!--EditVC-->
+        <scene sceneID="0xn-fY-wuD">
+            <objects>
+                <viewController storyboardIdentifier="EditVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HZC-ue-79N" customClass="EditVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTg-cN-3Zh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-NK-ICr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y3-Hf-eSt">
+                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5yq-pu-hYj"/>
+                                    <constraint firstAttribute="width" constant="375" id="Q3J-l9-giZ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Ok" width="373.5" id="j9p-rT-bRO">
+                                        <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="okButtonTapped:" destination="HZC-ue-79N" id="5UC-95-vhk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fb6-lJ-G0f"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4y3-Hf-eSt" firstAttribute="bottom" secondItem="fb6-lJ-G0f" secondAttribute="bottom" id="6Mn-Bp-e1a"/>
+                            <constraint firstItem="LcR-NK-ICr" firstAttribute="trailing" secondItem="fb6-lJ-G0f" secondAttribute="trailing" id="6vM-Do-Ty7"/>
+                            <constraint firstItem="LcR-NK-ICr" firstAttribute="leading" secondItem="fb6-lJ-G0f" secondAttribute="leading" id="B61-Cz-ax4"/>
+                            <constraint firstItem="4y3-Hf-eSt" firstAttribute="leading" secondItem="fb6-lJ-G0f" secondAttribute="leading" id="HkB-Mq-c1y"/>
+                            <constraint firstItem="4y3-Hf-eSt" firstAttribute="trailing" secondItem="fb6-lJ-G0f" secondAttribute="trailing" id="Hrw-RH-pjr"/>
+                            <constraint firstItem="4y3-Hf-eSt" firstAttribute="top" secondItem="LcR-NK-ICr" secondAttribute="bottom" id="ksm-6B-Hxz"/>
+                            <constraint firstItem="LcR-NK-ICr" firstAttribute="top" secondItem="fb6-lJ-G0f" secondAttribute="top" id="no2-Op-fB3"/>
+                            <constraint firstItem="4y3-Hf-eSt" firstAttribute="top" secondItem="LcR-NK-ICr" secondAttribute="bottom" id="q3R-o0-JrC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fsE-m6-a7I">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ske-6V-RnP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="1Fm-A3-unH">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="exitTapped:" destination="HZC-ue-79N" id="rx6-Ti-4pT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editView" destination="LcR-NK-ICr" id="CVQ-Ji-kno"/>
+                        <segue destination="ww1-qw-2HN" kind="show" identifier="ShowReviewVC" id="x5F-XQ-O8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHA-mH-Sh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="483.50824587706148"/>
+        </scene>
+        <!--ReviewVC-->
+        <scene sceneID="C8B-3v-7aL">
+            <objects>
+                <viewController storyboardIdentifier="ReviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ww1-qw-2HN" customClass="ReviewVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ule-FZ-Tpv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-ba-Eeu">
+                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="B4U-AI-myN"/>
+                                    <constraint firstAttribute="height" constant="50" id="lvt-y9-6xU"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Dodaj stranicu" width="192.5" id="2Bj-xo-xfd">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="ww1-qw-2HN" id="5wg-eW-v4K"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Spremi PDF" width="180.5" id="ldL-Pv-p0N">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="pdfButtonTapped:" destination="ww1-qw-2HN" id="CpS-rB-zMK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKR-3k-DhN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0mB-qW-BIQ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZZc-ba-Eeu" firstAttribute="leading" secondItem="0mB-qW-BIQ" secondAttribute="leading" id="8ae-RC-dXv"/>
+                            <constraint firstItem="cKR-3k-DhN" firstAttribute="top" secondItem="0mB-qW-BIQ" secondAttribute="top" id="9Oi-gG-1OG"/>
+                            <constraint firstItem="ZZc-ba-Eeu" firstAttribute="top" secondItem="cKR-3k-DhN" secondAttribute="bottom" id="EQD-VW-les"/>
+                            <constraint firstItem="cKR-3k-DhN" firstAttribute="trailing" secondItem="0mB-qW-BIQ" secondAttribute="trailing" id="Phx-et-a9q"/>
+                            <constraint firstItem="ZZc-ba-Eeu" firstAttribute="bottom" secondItem="0mB-qW-BIQ" secondAttribute="bottom" id="ZXg-Dq-buh"/>
+                            <constraint firstItem="ZZc-ba-Eeu" firstAttribute="trailing" secondItem="0mB-qW-BIQ" secondAttribute="trailing" id="ePO-XR-Mfc"/>
+                            <constraint firstItem="cKR-3k-DhN" firstAttribute="leading" secondItem="0mB-qW-BIQ" secondAttribute="leading" id="ioF-SN-lZN"/>
+                            <constraint firstItem="ZZc-ba-Eeu" firstAttribute="top" secondItem="cKR-3k-DhN" secondAttribute="bottom" id="jlz-pV-JTv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YWu-t1-by5">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="0q2-BE-JZx">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="exitTapped:" destination="ww1-qw-2HN" id="wxW-9s-P9x"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="RotateImage" id="2cI-NX-6S3">
+                            <imageReference key="image" image="rotate.left" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="rotateTapped:" destination="ww1-qw-2HN" id="xbf-u9-Sgk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reviewImageView" destination="cKR-3k-DhN" id="XOF-sF-fI5"/>
+                        <segue destination="tdH-jh-t9g" kind="show" identifier="ShowMultiPageVC" id="RmN-OH-0Du"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8j-sP-VVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="483.50824587706148"/>
+        </scene>
+        <!--Multi PageVC-->
+        <scene sceneID="RGT-II-lCu">
+            <objects>
+                <viewController storyboardIdentifier="MultiPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tdH-jh-t9g" customClass="MultiPageVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nd8-8S-vbC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9P-pr-KGY">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Dodaj stranicu" width="182.5" id="GdB-UM-08a">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="addTapped:" destination="tdH-jh-t9g" id="oIa-Da-jFt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Spremi PDF" width="187.5" id="2MP-bp-B4S">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-V3-FGb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56X-CY-FfP">
+                                        <rect key="frame" x="8" y="8" width="174" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-2q-zk5">
+                                        <rect key="frame" x="190" y="8" width="177" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-T9-IOG">
+                                        <rect key="frame" x="8" y="285" width="174" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsI-qB-Oxb">
+                                        <rect key="frame" x="190" y="285" width="177" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="P6m-de-C2q"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ptz-SX-XzC"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WLC-hZ-SGo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RsS-V3-FGb" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="C33-Bj-o0O"/>
+                            <constraint firstItem="RsS-V3-FGb" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="NNl-VE-crq"/>
+                            <constraint firstItem="RsS-V3-FGb" firstAttribute="top" secondItem="WLC-hZ-SGo" secondAttribute="top" id="ReJ-AR-c39"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="bottom" secondItem="WLC-hZ-SGo" secondAttribute="bottom" id="d67-vw-KPU"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="top" secondItem="RsS-V3-FGb" secondAttribute="bottom" id="dW7-V2-AZ4"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="pnL-ze-kiJ"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="siv-sn-kb9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3pK-Ms-z0B">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ewT-mB-NLn">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="exitTapped:" destination="tdH-jh-t9g" id="OaN-7b-4mp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBotImage" destination="6lt-T9-IOG" id="bxF-VB-P0N"/>
+                        <outlet property="leftImage" destination="56X-CY-FfP" id="EQg-pN-azt"/>
+                        <outlet property="rightBotImage" destination="MsI-qB-Oxb" id="Cf7-fO-l2i"/>
+                        <outlet property="rightImage" destination="cAR-2q-zk5" id="yV3-g7-bHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHn-HW-TGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2204" y="483.50824587706148"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5GA-lY-l77">
+            <objects>
+                <navigationController storyboardIdentifier="ScannerVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VnV-PZ-k43" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Rhp-Z2-r8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P90-6U-1hR" kind="relationship" relationship="rootViewController" id="YKS-od-dDW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygK-3e-Adh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="485"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pokreni skener" width="360" height="800"/>
+        <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.inset.filled" catalog="system" width="128" height="121"/>
+        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="97"/>
+        <image name="rotate.left" catalog="system" width="118" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
