@@ -68,6 +68,7 @@
 		05394D91281C541A00D3A22E /* project.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8D281C541A00D3A22E /* project.png */; };
 		05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */; };
 		05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8F281C541A00D3A22E /* LinkedFrameworks.png */; };
+		055A7E8428217ED300B0139C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7E8328217ED300B0139C /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +154,7 @@
 		05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WeScan-Banner.jpg"; sourceTree = "<group>"; };
 		05394D8F281C541A00D3A22E /* LinkedFrameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedFrameworks.png; sourceTree = "<group>"; };
 		05394D94281C545300D3A22E /* WeScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeScan.h; sourceTree = "<group>"; };
+		055A7E8328217ED300B0139C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				0535A716281D3E9800FBFD99 /* EditVC.swift */,
 				0535A718281D494200FBFD99 /* ReviewVC.swift */,
 				0535A71C281D561700FBFD99 /* MultiPageVC.swift */,
+				055A7E8328217ED300B0139C /* ImageCell.swift */,
 			);
 			path = scannerApp;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				05394D84281C53D200D3A22E /* VisionRectangleDetector.swift in Sources */,
 				05394D1D281C538800D3A22E /* RectangleFeaturesFunnel.swift in Sources */,
 				05394CF1281C4CEF00D3A22E /* AppDelegate.swift in Sources */,
+				055A7E8428217ED300B0139C /* ImageCell.swift in Sources */,
 				05394D0E281C52B200D3A22E /* CaptureSession+Flash.swift in Sources */,
 				05394D87281C53D200D3A22E /* Quadrilateral.swift in Sources */,
 				05394D22281C538800D3A22E /* ScannerViewController.swift in Sources */,

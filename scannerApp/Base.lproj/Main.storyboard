@@ -17,15 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokreni skener" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-ux-1Iq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-ux-1Iq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-vm-Yq8">
-                                <rect key="frame" x="108" y="380" width="159" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-vm-Yq8">
+                                <rect key="frame" x="95" y="334" width="189" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Pokreni skener">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Pokreni skener">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" metaFont="systemBold" size="18"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startScannerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFw-dT-HAt"/>
@@ -44,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="-194.19642857142856"/>
+            <point key="canvasLocation" x="-98.400000000000006" y="-194.75262368815595"/>
         </scene>
         <!--ScannerVC-->
         <scene sceneID="NJ6-RC-mCZ">
@@ -264,37 +274,25 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-V3-FGb">
-                                <rect key="frame" x="37" y="60" width="297" height="474"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56X-CY-FfP">
-                                        <rect key="frame" x="8" y="8" width="128" height="222"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-2q-zk5">
-                                        <rect key="frame" x="144" y="8" width="145" height="222"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-T9-IOG">
-                                        <rect key="frame" x="8" y="238" width="128" height="194"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsI-qB-Oxb">
-                                        <rect key="frame" x="144" y="238" width="145" height="194"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="P6m-de-C2q"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Ptz-SX-XzC"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-fx-zuo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="WhiteView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WLC-hZ-SGo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="bottom" secondItem="WLC-hZ-SGo" secondAttribute="bottom" id="KMM-Jn-Erg"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="gJm-Xd-8zd"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="xsb-Ak-jr2"/>
+                            <constraint firstItem="Q1L-fx-zuo" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="DRc-qi-yGh"/>
+                            <constraint firstItem="Q1L-fx-zuo" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="Kfg-67-md6"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="bottom" secondItem="WLC-hZ-SGo" secondAttribute="bottom" id="LWP-Vc-3iG"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="top" secondItem="Q1L-fx-zuo" secondAttribute="bottom" id="eUt-a9-0Ks"/>
+                            <constraint firstItem="Q1L-fx-zuo" firstAttribute="top" secondItem="WLC-hZ-SGo" secondAttribute="top" id="lNY-dY-ceA"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="sYL-q2-IbN"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="zSl-4b-YzT"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="top" secondItem="Q1L-fx-zuo" secondAttribute="bottom" id="zbE-MH-1QO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3pK-Ms-z0B">
@@ -307,10 +305,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leftBotImage" destination="6lt-T9-IOG" id="bxF-VB-P0N"/>
-                        <outlet property="leftImage" destination="56X-CY-FfP" id="EQg-pN-azt"/>
-                        <outlet property="rightBotImage" destination="MsI-qB-Oxb" id="Cf7-fO-l2i"/>
-                        <outlet property="rightImage" destination="cAR-2q-zk5" id="yV3-g7-bHH"/>
+                        <outlet property="viewForImages" destination="Q1L-fx-zuo" id="Ov5-6l-Dum"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHn-HW-TGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -320,7 +315,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5GA-lY-l77">
             <objects>
-                <navigationController storyboardIdentifier="ScannerVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VnV-PZ-k43" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ScannerVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VnV-PZ-k43" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Rhp-Z2-r8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -337,11 +332,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pokreni skener" width="360" height="800"/>
         <image name="camera.rotate.fill" catalog="system" width="128" height="94"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="photo.on.rectangle" catalog="system" width="128" height="97"/>
         <image name="rotate.left" catalog="system" width="118" height="128"/>
+        <image name="scanner" width="360" height="800"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

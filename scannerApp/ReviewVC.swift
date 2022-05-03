@@ -7,7 +7,7 @@
 
 import UIKit
 
-var imageArray: [UIImage] = []
+var imageArray: [ImageData] = []
 
 class ReviewVC: UIViewController {
     
@@ -36,8 +36,10 @@ class ReviewVC: UIViewController {
     
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
         if let image = image {
-            imageArray.append(image)
+            let imageData = ImageData(image: image)
+            imageArray.append(imageData)
         }
+        
         print("Broj slika: ", imageArray.count)
         guard let multiPage = self.storyboard?.instantiateViewController(withIdentifier: "MultiPageVC") as? MultiPageVC else { return }
         multiPage.modalPresentationStyle = .fullScreen
