@@ -54,52 +54,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-hD-XRB">
-                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Xsf-Uf-hd9"/>
-                                    <constraint firstAttribute="width" constant="375" id="kq0-l4-oQ3"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="Gallery" width="126.5" id="YvK-Ki-EJa">
-                                        <imageReference key="image" image="photo.on.rectangle.fill" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="galleryButtonTapped:" destination="P90-6U-1hR" id="OSB-em-y8M"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Shutter" width="121.5" id="GuH-2O-lQM">
-                                        <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="shutterButtonTapped:" destination="P90-6U-1hR" id="L6r-PB-upC"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Rotate" width="121.5" id="8bJ-9c-9We">
-                                        <imageReference key="image" image="arrow.triangle.2.circlepath.camera.fill" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="rotateButtonTapped:" destination="P90-6U-1hR" id="Byb-LV-5Jr"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwk-lc-75d">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-Rd-Lw5">
+                                <rect key="frame" x="16" y="538" width="106" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="galleryTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="qiq-jG-zrC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-nb-DpK">
+                                <rect key="frame" x="266" y="544" width="93" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="camera.rotate.fill" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rotateCameraTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="Tmx-2b-8LU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7sR-kT-KSv"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LVk-hD-XRB" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" id="0CY-47-sYd"/>
-                            <constraint firstItem="LVk-hD-XRB" firstAttribute="bottom" secondItem="7sR-kT-KSv" secondAttribute="bottom" id="B7z-jl-5Wo"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="top" secondItem="7sR-kT-KSv" secondAttribute="top" id="QXu-1h-T5U"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="Wr5-hU-r93"/>
-                            <constraint firstItem="LVk-hD-XRB" firstAttribute="trailing" secondItem="7sR-kT-KSv" secondAttribute="trailing" id="aeO-hj-4ad"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="trailing" secondItem="7sR-kT-KSv" secondAttribute="trailing" id="fLp-tA-ycQ"/>
-                            <constraint firstItem="LVk-hD-XRB" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="oYN-pR-Ojp"/>
-                            <constraint firstItem="LVk-hD-XRB" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" id="yeh-mB-CPi"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="61q-Hy-e2F"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="top" secondItem="7sR-kT-KSv" secondAttribute="top" id="eeC-QB-UkY"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="trailing" secondItem="7sR-kT-KSv" secondAttribute="trailing" id="hvX-dQ-Enf"/>
+                            <constraint firstAttribute="bottom" secondItem="hwk-lc-75d" secondAttribute="bottom" constant="93" id="raV-Gs-Osx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="clG-QL-AH1">
@@ -129,13 +119,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-NK-ICr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y3-Hf-eSt">
-                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5yq-pu-hYj"/>
+                                    <constraint firstAttribute="height" constant="44" id="5yq-pu-hYj"/>
                                     <constraint firstAttribute="width" constant="375" id="Q3J-l9-giZ"/>
                                 </constraints>
                                 <items>
@@ -190,10 +180,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-ba-Eeu">
-                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="B4U-AI-myN"/>
-                                    <constraint firstAttribute="height" constant="50" id="lvt-y9-6xU"/>
+                                    <constraint firstAttribute="height" constant="44" id="lvt-y9-6xU"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem title="Dodaj stranicu" width="192.5" id="2Bj-xo-xfd">
@@ -211,7 +201,7 @@
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKR-3k-DhN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0mB-qW-BIQ"/>
@@ -274,23 +264,24 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-V3-FGb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-V3-FGb">
+                                <rect key="frame" x="37" y="60" width="297" height="474"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56X-CY-FfP">
-                                        <rect key="frame" x="8" y="8" width="174" height="269"/>
+                                        <rect key="frame" x="8" y="8" width="128" height="222"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-2q-zk5">
-                                        <rect key="frame" x="190" y="8" width="177" height="269"/>
+                                        <rect key="frame" x="144" y="8" width="145" height="222"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-T9-IOG">
-                                        <rect key="frame" x="8" y="285" width="174" height="286"/>
+                                        <rect key="frame" x="8" y="238" width="128" height="194"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsI-qB-Oxb">
-                                        <rect key="frame" x="190" y="285" width="177" height="286"/>
+                                        <rect key="frame" x="144" y="238" width="145" height="194"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -301,13 +292,9 @@
                         <viewLayoutGuide key="safeArea" id="WLC-hZ-SGo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RsS-V3-FGb" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="C33-Bj-o0O"/>
-                            <constraint firstItem="RsS-V3-FGb" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="NNl-VE-crq"/>
-                            <constraint firstItem="RsS-V3-FGb" firstAttribute="top" secondItem="WLC-hZ-SGo" secondAttribute="top" id="ReJ-AR-c39"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="bottom" secondItem="WLC-hZ-SGo" secondAttribute="bottom" id="d67-vw-KPU"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="top" secondItem="RsS-V3-FGb" secondAttribute="bottom" id="dW7-V2-AZ4"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="pnL-ze-kiJ"/>
-                            <constraint firstItem="k9P-pr-KGY" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="siv-sn-kb9"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="bottom" secondItem="WLC-hZ-SGo" secondAttribute="bottom" id="KMM-Jn-Erg"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="trailing" secondItem="WLC-hZ-SGo" secondAttribute="trailing" id="gJm-Xd-8zd"/>
+                            <constraint firstItem="k9P-pr-KGY" firstAttribute="leading" secondItem="WLC-hZ-SGo" secondAttribute="leading" id="xsb-Ak-jr2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3pK-Ms-z0B">
@@ -351,10 +338,9 @@
     </scenes>
     <resources>
         <image name="Pokreni skener" width="360" height="800"/>
-        <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
+        <image name="camera.rotate.fill" catalog="system" width="128" height="94"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="circle.inset.filled" catalog="system" width="128" height="121"/>
-        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="97"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="97"/>
         <image name="rotate.left" catalog="system" width="118" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
