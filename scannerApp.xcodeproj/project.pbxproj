@@ -68,6 +68,7 @@
 		05394D91281C541A00D3A22E /* project.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8D281C541A00D3A22E /* project.png */; };
 		05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */; };
 		05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8F281C541A00D3A22E /* LinkedFrameworks.png */; };
+		0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */; };
 		055A7E8428217ED300B0139C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7E8328217ED300B0139C /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +155,7 @@
 		05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WeScan-Banner.jpg"; sourceTree = "<group>"; };
 		05394D8F281C541A00D3A22E /* LinkedFrameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedFrameworks.png; sourceTree = "<group>"; };
 		05394D94281C545300D3A22E /* WeScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeScan.h; sourceTree = "<group>"; };
+		0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndZoomVC.swift; sourceTree = "<group>"; };
 		055A7E8328217ED300B0139C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +209,7 @@
 				05394D94281C545300D3A22E /* WeScan.h */,
 				0535A714281D35E200FBFD99 /* ScannerVC.swift */,
 				0535A716281D3E9800FBFD99 /* EditVC.swift */,
+				0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */,
 				0535A718281D494200FBFD99 /* ReviewVC.swift */,
 				0535A71C281D561700FBFD99 /* MultiPageVC.swift */,
 				055A7E8328217ED300B0139C /* ImageCell.swift */,
@@ -496,6 +499,7 @@
 				05394D10281C52B200D3A22E /* CaptureSession.swift in Sources */,
 				05394D5A281C53AF00D3A22E /* Transformable.swift in Sources */,
 				05394D85281C53D200D3A22E /* CIRectangleDetector.swift in Sources */,
+				0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */,
 				05394D6B281C53C600D3A22E /* CGSize+Utils.swift in Sources */,
 				05394D20281C538800D3A22E /* CameraScannerViewController.swift in Sources */,
 				05394D6D281C53C600D3A22E /* CIImage+Utils.swift in Sources */,

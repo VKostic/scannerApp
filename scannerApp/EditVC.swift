@@ -21,7 +21,6 @@ class EditVC: UIViewController {
     
     @IBAction func okButtonTapped(_ sender: UIBarButtonItem) {
         editController.cropImage()
-        
     }
     
     @IBAction func exitTapped(_ sender: UIBarButtonItem) {
@@ -43,10 +42,10 @@ class EditVC: UIViewController {
 
 extension EditVC: EditImageViewDelegate {
     func cropped(image: UIImage) {
-        guard let reviewController = self.storyboard?.instantiateViewController(withIdentifier: "ReviewVC") as? ReviewVC else { return }
-        reviewController.modalPresentationStyle = .fullScreen
-        reviewController.image = image
-        reviewController.quad = quad
-        navigationController?.pushViewController(reviewController, animated: false)
+        guard let rotateZoomController = self.storyboard?.instantiateViewController(withIdentifier: "RotateAndZoomVC") as? RotateAndZoomVC else { return }
+        rotateZoomController.modalPresentationStyle = .fullScreen
+        rotateZoomController.image = image
+        rotateZoomController.quad = quad
+        navigationController?.pushViewController(rotateZoomController, animated: false)
     }
 }

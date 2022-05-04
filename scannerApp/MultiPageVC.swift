@@ -23,41 +23,12 @@ class MultiPageVC: UIViewController {
         return cv
     }()
     
-//    @IBOutlet weak var leftImage: UIImageView!
-//    @IBOutlet weak var rightImage: UIImageView!
-//    @IBOutlet weak var leftBotImage: UIImageView!
-//    @IBOutlet weak var rightBotImage: UIImageView!
-//
-//    func addImages() {
-//        if imageArray.count == 1 {
-//            leftImage.image = imageArray[0]
-//        }
-//
-//        if imageArray.count == 2 {
-//            leftImage.image = imageArray[0]
-//            rightImage.image = imageArray[1]
-//        }
-//
-//        if imageArray.count == 3 {
-//            leftImage.image = imageArray[0]
-//            rightImage.image = imageArray[1]
-//            leftBotImage.image = imageArray[2]
-//        }
-//
-//        if imageArray.count == 4 {
-//            leftImage.image = imageArray[0]
-//            rightImage.image = imageArray[1]
-//            leftBotImage.image = imageArray[2]
-//            rightBotImage.image = imageArray[3]
-//        }
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
         setupConstraints()
-//        addImages()
     }
     
     @IBAction func exitTapped(_ sender: UIBarButtonItem) {
@@ -72,7 +43,7 @@ class MultiPageVC: UIViewController {
         self.present(backToScanner, animated: true, completion: nil)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         collectionView.topAnchor.constraint(equalTo: viewForImages.topAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: viewForImages.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: viewForImages.trailingAnchor).isActive = true
@@ -97,8 +68,4 @@ extension MultiPageVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         let height: CGFloat = collectionView.frame.height/3 - 1
         return CGSize(width: width, height: height)
     }
-}
-
-struct ImageData {
-    var image = UIImage()
 }

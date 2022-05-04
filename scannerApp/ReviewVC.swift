@@ -49,3 +49,7 @@ class ReviewVC: UIViewController {
     @IBAction func pdfButtonTapped(_ sender: UIBarButtonItem) {
     }
 }
+
+struct ImageData {
+    var image = UIImage()
+}
