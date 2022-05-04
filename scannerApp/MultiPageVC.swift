@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import PDFKit
 
 class MultiPageVC: UIViewController {
     
     @IBOutlet weak var viewForImages: UIView!
+    var pdfView: PDFView!
     
     fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -31,7 +33,43 @@ class MultiPageVC: UIViewController {
         setupConstraints()
     }
     
+    @IBAction func makePDF(_ sender: UIBarButtonItem) {
+        generatePDF()
+    }
+    
+    func generatePDF() {
+        let pageBounds = CGRect(x: 0, y: 0, width: 595, height: 842)
+        let margin: CGFloat = 40
+        let imageMaxWidth = pageBounds.width - (margin * 2)
+        let imageMaxHeight = pageBounds.height - (margin * 2)
+        
+        DispatchQueue.main.async {
+            let pdfDocument = PDFDocument()
+            var counter = 0
+            
+            for i in imageArray {
+                var image = i.image
+                let sizeOfImage = image.size.scaleFactor(forMaxWidth: imageMaxWidth, maxHeight: imageMaxHeight)
+                image = image.scaledImage(scaleFactor: sizeOfImage)!
+                let pdfPage = PDFPage(image: image)
+                pdfDocument.insert(pdfPage!, at: counter)
+                counter += 1
+            }
+            
+            guard let documentData = pdfDocument.dataRepresentation() else { return }
+            
+            guard let showPDF = self.storyboard?.instantiateViewController(withIdentifier: "ShowPDF") as? ShowPDF else { return }
+            showPDF.modalPresentationStyle = .fullScreen
+            showPDF.documentData = documentData
+            self.navigationController?.pushViewController(showPDF, animated: false)
+            
+//            let activityController = UIActivityViewController(activityItems: [documentData], applicationActivities: nil)
+//            self.present(activityController, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func exitTapped(_ sender: UIBarButtonItem) {
+        imageArray = []
         guard let backToHome = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
         backToHome.modalPresentationStyle = .fullScreen
         self.present(backToHome, animated: true, completion: nil)
