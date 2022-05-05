@@ -62,9 +62,6 @@ class MultiPageVC: UIViewController {
             showPDF.modalPresentationStyle = .fullScreen
             showPDF.documentData = documentData
             self.navigationController?.pushViewController(showPDF, animated: false)
-            
-//            let activityController = UIActivityViewController(activityItems: [documentData], applicationActivities: nil)
-//            self.present(activityController, animated: true, completion: nil)
         }
     }
     

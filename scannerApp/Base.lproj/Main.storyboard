@@ -308,13 +308,6 @@
                                 <action selector="exitTapped:" destination="ww1-qw-2HN" id="wxW-9s-P9x"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="RotateImage" id="2cI-NX-6S3">
-                            <imageReference key="image" image="rotate.left" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="rotateTapped:" destination="ww1-qw-2HN" id="xbf-u9-Sgk"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="reviewImageView" destination="cKR-3k-DhN" id="XOF-sF-fI5"/>
