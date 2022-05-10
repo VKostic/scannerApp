@@ -17,6 +17,7 @@ class ShowPDF: UIViewController {
         let activityController = UIActivityViewController(activityItems: [documentData!], applicationActivities: nil)
         self.present(activityController, animated: true, completion: nil)
     }
+    
     @IBAction func backToBeginning(_ sender: UIBarButtonItem) {
         imageArray = []
         guard let backToHome = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }

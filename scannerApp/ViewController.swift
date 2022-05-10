@@ -9,6 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var startButton: UIButton!
+    
+    let buttonAttributes: [NSAttributedString.Key: Any] = [
+          .font: UIFont.systemFont(ofSize: 18),
+          .underlineStyle: NSUnderlineStyle.single.rawValue
+      ]
+    
     @IBAction func startScannerTapped(_ sender: UIButton) {
         guard let scannerView = self.storyboard?.instantiateViewController(withIdentifier: "ScannerVC") else { return }
         scannerView.modalPresentationStyle = .fullScreen
@@ -17,5 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let buttonText = NSMutableAttributedString(string: "Pokreni skener", attributes: buttonAttributes)
+        startButton.setAttributedTitle(buttonText, for: .normal)
     }
 }
