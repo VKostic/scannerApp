@@ -19,7 +19,7 @@ class EditVC: UIViewController {
         setupView()
     }
     
-    @IBAction func okButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func okButtonTapped(_ sender: UIButton) {
         editController.cropImage()
     }
     

@@ -33,7 +33,7 @@ class MultiPageVC: UIViewController {
         setupConstraints()
     }
     
-    @IBAction func makePDF(_ sender: UIBarButtonItem) {
+    @IBAction func makePDF(_ sender: UIButton) {
         generatePDF()
     }
     
@@ -72,7 +72,7 @@ class MultiPageVC: UIViewController {
         self.present(backToHome, animated: true, completion: nil)
     }
     
-    @IBAction func addTapped(_ sender: UIBarButtonItem) {
+    @IBAction func addTapped(_ sender: UIButton) {
         guard let backToScanner = self.storyboard?.instantiateViewController(withIdentifier: "ScannerVC") else { return }
         backToScanner.modalPresentationStyle = .fullScreen
         self.present(backToScanner, animated: true, completion: nil)

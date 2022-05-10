@@ -28,7 +28,7 @@ class ReviewVC: UIViewController {
         self.present(backToHome, animated: true, completion: nil)
     }
     
-    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func addButtonTapped(_ sender: UIButton) {
         if let image = image {
             let imageData = ImageData(image: image)
             imageArray.append(imageData)
@@ -40,7 +40,7 @@ class ReviewVC: UIViewController {
         navigationController?.pushViewController(multiPage, animated: false)
     }
     
-    @IBAction func pdfButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func pdfButtonTapped(_ sender: UIButton) {
         let pageBounds = CGRect(x: 0, y: 0, width: 595, height: 842)
         let margin: CGFloat = 40
         let imageMaxWidth = pageBounds.width - (margin * 2)
