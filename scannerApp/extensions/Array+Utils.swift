@@ -1,8 +1,9 @@
 //
 //  Array+Utils.swift
-//  scannerApp
+//  WeScan
 //
-//  Created by Vladica Kostic on 29.4.22..
+//  Created by Boris Emorine on 2/8/18.
+//  Copyright © 2018 WeTransfer. All rights reserved.
 //
 
 import Vision
