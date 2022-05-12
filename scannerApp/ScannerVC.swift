@@ -116,7 +116,7 @@ class ScannerVC: UIViewController {
             shutterButton.heightAnchor.constraint(equalToConstant: 65.0)
         ]
         
-        let shutterBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 8.0)
+        let shutterBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 20.0)
         shutterConstraint.append(shutterBottomConstraint)
         NSLayoutConstraint.activate(shutterConstraint)
     }
