@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-ux-1Iq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-vm-Yq8">
-                                <rect key="frame" x="93" y="384" width="228" height="239"/>
+                                <rect key="frame" x="93" y="340" width="189" height="88"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -56,15 +56,15 @@
             <objects>
                 <viewController id="P90-6U-1hR" customClass="ScannerVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhS-hl-zdX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwk-lc-75d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-Rd-Lw5">
-                                <rect key="frame" x="20" y="689" width="106" height="65"/>
+                                <rect key="frame" x="16" y="538" width="106" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="PH6-cl-4Df"/>
                                     <constraint firstAttribute="width" constant="106" id="gTP-dc-HYb"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-nb-DpK">
-                                <rect key="frame" x="301" y="695" width="93" height="59"/>
+                                <rect key="frame" x="266" y="544" width="93" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="93" id="YVO-b5-tVW"/>
                                 </constraints>
@@ -130,15 +130,15 @@
             <objects>
                 <viewController storyboardIdentifier="EditVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HZC-ue-79N" customClass="EditVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gTg-cN-3Zh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-NK-ICr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="710"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9Y-Nf-fWO">
-                                <rect key="frame" x="176" y="718" width="62" height="44"/>
+                                <rect key="frame" x="156.5" y="567" width="62" height="44"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
@@ -184,14 +184,14 @@
             <objects>
                 <viewController storyboardIdentifier="RotateAndZoomVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="boh-Zn-IbD" customClass="RotateAndZoomVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EOm-lI-1AS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="6" translatesAutoresizingMaskIntoConstraints="NO" id="5DY-MJ-Gnp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="660"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Np-SG-deh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="660"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -204,7 +204,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwd-Ir-gY7">
-                                <rect key="frame" x="159" y="723" width="96" height="31"/>
+                                <rect key="frame" x="159" y="572" width="57" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="qoE-hs-TeR"/>
                                 </constraints>
@@ -219,7 +219,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="86F-Bo-la4">
-                                <rect key="frame" x="70" y="671" width="274" height="31"/>
+                                <rect key="frame" x="70" y="520" width="235" height="31"/>
                                 <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" systemColor="systemPurpleColor"/>
@@ -276,14 +276,14 @@
             <objects>
                 <viewController storyboardIdentifier="ReviewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ww1-qw-2HN" customClass="ReviewVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ule-FZ-Tpv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKR-3k-DhN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="710"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-lN-Ddz">
-                                <rect key="frame" x="20" y="723" width="160" height="31"/>
+                                <rect key="frame" x="16" y="572" width="160" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="OZd-Js-dAo"/>
                                 </constraints>
@@ -296,7 +296,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLM-6R-wfP">
-                                <rect key="frame" x="203" y="723" width="191" height="31"/>
+                                <rect key="frame" x="199" y="572" width="160" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Spremi PDF">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -343,18 +343,18 @@
             <objects>
                 <viewController storyboardIdentifier="MultiPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tdH-jh-t9g" customClass="MultiPageVC" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nd8-8S-vbC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-fx-zuo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="710"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="WhiteView">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7A-X4-rx2">
-                                <rect key="frame" x="20" y="723" width="191" height="31"/>
+                                <rect key="frame" x="16" y="572" width="160" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Dodaj stranicu">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -364,7 +364,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8p-bM-0uR">
-                                <rect key="frame" x="234" y="723" width="160" height="31"/>
+                                <rect key="frame" x="199" y="572" width="160" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="bKM-tg-ZxJ"/>
                                 </constraints>
@@ -414,11 +414,11 @@
             <objects>
                 <viewController storyboardIdentifier="ShowPDF" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X0Q-UQ-Yr2" customClass="ShowPDF" customModule="scannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ujw-ZZ-IP0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Te0-po-RFy">
-                                <rect key="frame" x="177" y="13.666666666666679" width="60" height="121.33333333333334"/>
+                                <rect key="frame" x="157.5" y="14" width="60" height="121"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="108.5" id="Hnc-JI-Sfw"/>
@@ -434,7 +434,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF je spreman!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zA-fM-mwE">
-                                <rect key="frame" x="144.66666666666666" y="158" width="124.99999999999997" height="21"/>
+                                <rect key="frame" x="125" y="158" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -469,7 +469,7 @@
                 <navigationController storyboardIdentifier="ScannerVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VnV-PZ-k43" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Rhp-Z2-r8f">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
