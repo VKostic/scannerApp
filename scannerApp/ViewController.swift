@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let buttonText = NSMutableAttributedString(string: "Pokreni skener", attributes: buttonAttributes)
         startButton.setAttributedTitle(buttonText, for: .normal)
     }

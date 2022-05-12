@@ -10,7 +10,6 @@ import UIKit
 class ScannerVC: UIViewController {
     
     @IBOutlet private weak var cameraView: UIView!
-    
     var cameraController: CameraScannerViewController!
     var flashEnabled = false
     
@@ -24,13 +23,6 @@ class ScannerVC: UIViewController {
     
     @IBAction func rotateCameraTapped(_ sender: UIButton) {
     }
-    
-//    private lazy var shutterButton: ShutterButton = {
-//        let button = ShutterButton()
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.addTarget(self, action: #selector(shutterButtonTapped(_:)), for: .touchUpInside)
-//        return button
-//    }()
     
     @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
         guard let backToHome = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
@@ -72,7 +64,6 @@ class ScannerVC: UIViewController {
         super.viewDidLoad()
         setupView()
         setupNavigationBar()
-//        setupConstraints()
     }
     
     func selectImage() {
@@ -83,7 +74,6 @@ class ScannerVC: UIViewController {
     }
     
     private func setupView() {
-//        view.addSubview(shutterButton)
         cameraController = CameraScannerViewController()
         cameraController.view.frame = cameraView.bounds
         cameraController.willMove(toParent: self)
@@ -94,37 +84,18 @@ class ScannerVC: UIViewController {
     }
     
     private func setupNavigationBar() {
-//        navigationItem.setLeftBarButton(flashButton, animated: false)
         navigationItem.setRightBarButton(autoScanButton, animated: false)
         navigationItem.titleView = flashButton
-//        navigationItem.setLeftBarButton(cancelBarButton, animated: false)
         
         if UIImagePickerController.isFlashAvailable(for: .rear) == false {
             let flashOffImage = UIImage(systemName: "bolt.slash.fill", named: "flashUnavailable", in: Bundle(for: ScannerVC.self), compatibleWith: nil)
-//            flashButton.image = flashOffImage
             flashButton.setImage(flashOffImage, for: .disabled)
             flashButton.tintColor = UIColor.lightGray
         }
     }
     
-//    func setupConstraints() {
-//        var shutterConstraint = [NSLayoutConstraint]()
-//
-//        shutterConstraint = [
-//            shutterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            shutterButton.widthAnchor.constraint(equalToConstant: 65.0),
-//            shutterButton.heightAnchor.constraint(equalToConstant: 65.0),
-//            shutterButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -35.0)
-//        ]
-//
-//       let shutterBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 20.0)
-//        shutterConstraint.append(shutterBottomConstraint)
-//        NSLayoutConstraint.activate(shutterConstraint)
-//    }
-    
     @objc private func toggleFlash() {
         let state = CaptureSession.current.toggleFlash()
-        
         let flashImage = UIImage(systemName: "bolt.fill", named: "flash", in: Bundle(for: ScannerVC.self), compatibleWith: nil)
         let flashOffImage = UIImage(systemName: "bolt.slash.fill", named: "flashUnavailable", in: Bundle(for: ScannerVC.self), compatibleWith: nil)
         
@@ -180,7 +151,6 @@ extension ScannerVC: UIImagePickerControllerDelegate, UINavigationControllerDele
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         picker.dismiss(animated: true)
-        
         guard let image = info[.originalImage] as? UIImage else { return }
         guard let editVC = self.storyboard?.instantiateViewController(withIdentifier: "EditVC") as? EditVC else { return }
         editVC.modalPresentationStyle = .fullScreen

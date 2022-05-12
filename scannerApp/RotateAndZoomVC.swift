@@ -16,10 +16,8 @@ class RotateAndZoomVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
-        scrollView.delegate = self
-//        scrollView.minimumZoomScale = 1.0
-//        scrollView.maximumZoomScale = 3.0
         super.viewDidLoad()
+        scrollView.delegate = self
         guard let image = image else { return }
         imageView.image = image
     }
@@ -46,8 +44,6 @@ class RotateAndZoomVC: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
-//        slider.minimumValue = 1.0
-//        slider.maximumValue = 3.0
         scrollView.zoomScale = CGFloat(slider.value)
     }
     

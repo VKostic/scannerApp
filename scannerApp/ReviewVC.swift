@@ -12,16 +12,16 @@ var imageArray: [ImageData] = []
 
 class ReviewVC: UIViewController {
     
+    @IBOutlet weak var reviewImageView: UIImageView!
     var image: UIImage?
     var quad: Quadrilateral?
-    
-    @IBOutlet weak var reviewImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let image = image else { return }
         reviewImageView.image = image
     }
+    
     @IBAction func exitTapped(_ sender: UIBarButtonItem) {
         guard let backToHome = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
         backToHome.modalPresentationStyle = .fullScreen
