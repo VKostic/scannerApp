@@ -18,19 +18,19 @@ class ScannerVC: UIViewController {
         selectImage()
     }
     
-    @IBAction func shutterButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func shutterButtonTapped(_ sender: UIButton) {
         cameraController.capture()
     }
     
     @IBAction func rotateCameraTapped(_ sender: UIButton) {
     }
     
-    private lazy var shutterButton: ShutterButton = {
-        let button = ShutterButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(shutterButtonTapped(_:)), for: .touchUpInside)
-        return button
-    }()
+//    private lazy var shutterButton: ShutterButton = {
+//        let button = ShutterButton()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.addTarget(self, action: #selector(shutterButtonTapped(_:)), for: .touchUpInside)
+//        return button
+//    }()
     
     @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
         guard let backToHome = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
@@ -72,7 +72,7 @@ class ScannerVC: UIViewController {
         super.viewDidLoad()
         setupView()
         setupNavigationBar()
-        setupConstraints()
+//        setupConstraints()
     }
     
     func selectImage() {
@@ -83,7 +83,7 @@ class ScannerVC: UIViewController {
     }
     
     private func setupView() {
-        view.addSubview(shutterButton)
+//        view.addSubview(shutterButton)
         cameraController = CameraScannerViewController()
         cameraController.view.frame = cameraView.bounds
         cameraController.willMove(toParent: self)
@@ -107,19 +107,20 @@ class ScannerVC: UIViewController {
         }
     }
     
-    func setupConstraints() {
-        var shutterConstraint = [NSLayoutConstraint]()
-        
-        shutterConstraint = [
-            shutterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            shutterButton.widthAnchor.constraint(equalToConstant: 65.0),
-            shutterButton.heightAnchor.constraint(equalToConstant: 65.0)
-        ]
-        
-        let shutterBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 20.0)
-        shutterConstraint.append(shutterBottomConstraint)
-        NSLayoutConstraint.activate(shutterConstraint)
-    }
+//    func setupConstraints() {
+//        var shutterConstraint = [NSLayoutConstraint]()
+//
+//        shutterConstraint = [
+//            shutterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            shutterButton.widthAnchor.constraint(equalToConstant: 65.0),
+//            shutterButton.heightAnchor.constraint(equalToConstant: 65.0),
+//            shutterButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -35.0)
+//        ]
+//
+//       let shutterBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 20.0)
+//        shutterConstraint.append(shutterBottomConstraint)
+//        NSLayoutConstraint.activate(shutterConstraint)
+//    }
     
     @objc private func toggleFlash() {
         let state = CaptureSession.current.toggleFlash()

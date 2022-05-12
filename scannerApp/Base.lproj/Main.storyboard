@@ -60,51 +60,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwk-lc-75d">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="530"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-Rd-Lw5">
-                                <rect key="frame" x="16" y="538" width="106" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="PH6-cl-4Df"/>
-                                    <constraint firstAttribute="width" constant="106" id="gTP-dc-HYb"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="galleryTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="qiq-jG-zrC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-nb-DpK">
-                                <rect key="frame" x="266" y="544" width="93" height="59"/>
+                                <rect key="frame" x="288" y="538" width="71" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="YVO-b5-tVW"/>
+                                    <constraint firstAttribute="width" constant="71" id="ZOo-He-JRs"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="camera.rotate.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="rotateCameraTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="Tmx-2b-8LU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5Y-JV-9yM">
+                                <rect key="frame" x="142" y="535" width="91" height="68"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="45"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shutterButtonTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="HX8-ta-EcH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-Rd-Lw5">
+                                <rect key="frame" x="16" y="538" width="71" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="8u5-JC-D0Y"/>
+                                    <constraint firstAttribute="height" constant="65" id="THE-lj-OBh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19" scale="large"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="galleryTapped:" destination="P90-6U-1hR" eventType="touchUpInside" id="qiq-jG-zrC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7sR-kT-KSv"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FRX-nb-DpK" firstAttribute="trailing" secondItem="bhS-hl-zdX" secondAttribute="trailingMargin" id="24f-XS-h7S"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="2a0-7A-ONX"/>
-                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" constant="8" id="4i4-F9-REd"/>
-                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="leading" secondItem="bhS-hl-zdX" secondAttribute="leadingMargin" id="CDP-4P-uXQ"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="top" secondItem="7sR-kT-KSv" secondAttribute="top" id="DmT-D7-vlt"/>
-                            <constraint firstItem="7sR-kT-KSv" firstAttribute="bottom" secondItem="nQP-Rd-Lw5" secondAttribute="bottom" constant="20" id="UCq-ru-UkA"/>
-                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="bottom" secondItem="FRX-nb-DpK" secondAttribute="bottom" id="VcU-y6-MfY"/>
-                            <constraint firstItem="hwk-lc-75d" firstAttribute="centerX" secondItem="bhS-hl-zdX" secondAttribute="centerX" id="npj-5g-R4X"/>
-                            <constraint firstItem="FRX-nb-DpK" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" constant="14" id="pYl-3R-5hu"/>
+                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="bottom" secondItem="E5Y-JV-9yM" secondAttribute="bottom" id="0BD-Ps-IV6"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="centerX" secondItem="E5Y-JV-9yM" secondAttribute="centerX" id="EI2-3u-B84"/>
+                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="bottom" secondItem="FRX-nb-DpK" secondAttribute="bottom" id="JSL-rz-gZJ"/>
+                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="top" secondItem="FRX-nb-DpK" secondAttribute="top" id="PGV-AZ-VN3"/>
+                            <constraint firstItem="7sR-kT-KSv" firstAttribute="bottom" secondItem="nQP-Rd-Lw5" secondAttribute="bottom" constant="20" id="RFs-s6-F26"/>
+                            <constraint firstItem="FRX-nb-DpK" firstAttribute="trailing" secondItem="bhS-hl-zdX" secondAttribute="trailingMargin" id="W0V-fZ-dxT"/>
+                            <constraint firstItem="E5Y-JV-9yM" firstAttribute="leading" secondItem="nQP-Rd-Lw5" secondAttribute="trailing" constant="55" id="d0d-GH-0tr"/>
+                            <constraint firstItem="FRX-nb-DpK" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" constant="11" id="dHU-RQ-8bo"/>
+                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="top" secondItem="hwk-lc-75d" secondAttribute="bottom" constant="11" id="drt-mI-ad5"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="centerX" secondItem="bhS-hl-zdX" secondAttribute="centerX" id="hpH-AJ-PKQ"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="leading" secondItem="7sR-kT-KSv" secondAttribute="leading" id="lFd-GA-DiE"/>
+                            <constraint firstItem="nQP-Rd-Lw5" firstAttribute="leading" secondItem="bhS-hl-zdX" secondAttribute="leadingMargin" id="mFw-IU-oq0"/>
+                            <constraint firstItem="hwk-lc-75d" firstAttribute="top" secondItem="7sR-kT-KSv" secondAttribute="top" id="mOR-3C-rs3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="clG-QL-AH1">
@@ -211,7 +229,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -486,6 +504,7 @@
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="camera.rotate.fill" catalog="system" width="128" height="94"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.inset.filled" catalog="system" width="128" height="121"/>
         <image name="photo.on.rectangle" catalog="system" width="128" height="97"/>
         <image name="rotate.left" catalog="system" width="118" height="128"/>
         <image name="scanner" width="360" height="800"/>
