@@ -31,7 +31,8 @@ class ScannerVC: UIViewController {
     }
     
     private lazy var flashButton: UIButton = {
-        let image = UIImage(systemName: "bolt.fill", compatibleWith: nil)
+        //let image = UIImage(systemName: "bolt.fill", compatibleWith: nil)
+        let image = UIImage(named: "flash.png")
         let playButton = UIButton(type: .custom)
         playButton.setImage(image, for: .normal)
         playButton.addTarget(self, action: #selector(flashTapped(_:)), for: .touchUpInside)
