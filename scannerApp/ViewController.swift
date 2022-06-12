@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         self.present(scannerView, animated: true, completion: nil)
     }
     
+    @IBAction func idiNaStart(_ sender: UIButton) {
+        guard let startView = self.storyboard?.instantiateViewController(withIdentifier: "StartVC") else { return }
+        startView.modalPresentationStyle = .fullScreen
+        self.present(startView, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let buttonText = NSMutableAttributedString(string: "Pokreni skener", attributes: buttonAttributes)
