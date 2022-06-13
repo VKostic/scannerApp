@@ -18,7 +18,7 @@ class StartVC: UIViewController {
         tableViewController?.delegate = self
     }
     
-    var tableViewController : FirstTableVC?
+    var tableViewController: FirstTableVC?
     
     
 //    // MARK: - Toolbar
@@ -64,6 +64,30 @@ extension UIViewController: ProfileTableViewControllerDelegate {
         showProfile.modalPresentationStyle = .fullScreen
         self.present(showProfile, animated: true, completion: nil)
         }
+    
+    func showCompare() {
+        guard let showCompare = self.storyboard?.instantiateViewController(withIdentifier: "CompareVC") as? CompareVC else { return }
+        showCompare.modalPresentationStyle = .fullScreen
+        self.present(showCompare, animated: true, completion: nil)
+    }
+    
+    func showIban() {
+        guard let showIban = self.storyboard?.instantiateViewController(withIdentifier: "IbanVC") as? IbanVC else { return }
+        showIban.modalPresentationStyle = .fullScreen
+        self.present(showIban, animated: true, completion: nil)
+    }
+    
+    func showBuyers() {
+        guard let showBuyers = self.storyboard?.instantiateViewController(withIdentifier: "BuyersVC") as? BuyersVC else { return }
+        showBuyers.modalPresentationStyle = .fullScreen
+        self.present(showBuyers, animated: true, completion: nil)
+    }
+    
+    func showSuppliers() {
+        guard let showSuppliers = self.storyboard?.instantiateViewController(withIdentifier: "SuppliersVC") as? SuppliersVC else { return }
+        showSuppliers.modalPresentationStyle = .fullScreen
+        self.present(showSuppliers, animated: true, completion: nil)
+    }
     
     func navigationBarr() {
         let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 65))
@@ -173,5 +197,4 @@ extension UIViewController: ProfileTableViewControllerDelegate {
         items.append(rightButton)
         toolbarr.setItems(items, animated: false)
     }
-    
 }

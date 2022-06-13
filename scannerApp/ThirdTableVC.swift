@@ -1,18 +1,19 @@
 //
-//  FirstTableVC.swift
+//  ThirdTableVC.swift
 //  scannerApp
 //
-//  Created by Vladica Kostic on 9.6.22..
+//  Created by Vladica Kostic on 12.6.22..
 //
 
 import UIKit
 
-class FirstTableVC: UITableViewController {
-
+class ThirdTableVC: UITableViewController {
     
-    @IBOutlet var firstTableView: UITableView!
+    @IBOutlet var thirdTableVC: UITableView!
     
-    weak var delegate: ProfileTableViewControllerDelegate?
+    var cellText: String?
+    
+    weak var delegate : ProfileTableViewControllerDelegate?
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -26,20 +27,11 @@ class FirstTableVC: UITableViewController {
         if(indexPath.row == 1){
             if let delegate = delegate {
                 delegate.showCompare()
-            }
-        }
-        if(indexPath.row == 2){
-            if let delegate = delegate {
-                delegate.showBuyers()
-            }
-        }
-        if(indexPath.row == 3){
-            if let delegate = delegate {
-                delegate.showSuppliers()
+                cellText = "Prihod"
             }
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

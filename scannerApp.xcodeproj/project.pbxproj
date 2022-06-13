@@ -60,10 +60,47 @@
 		05394D91281C541A00D3A22E /* project.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8D281C541A00D3A22E /* project.png */; };
 		05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */; };
 		05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8F281C541A00D3A22E /* LinkedFrameworks.png */; };
+		053A22C72856257C00D28205 /* CompareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22C62856257C00D28205 /* CompareCell.swift */; };
+		053A22C92856401F00D28205 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22C82856401F00D28205 /* CheckBox.swift */; };
+		053A22CB285641D100D28205 /* IbanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CA285641D100D28205 /* IbanVC.swift */; };
+		053A22CD28564C1A00D28205 /* BuyersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CC28564C1A00D28205 /* BuyersCell.swift */; };
 		0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */; };
 		0548EBC52822A09000E129C8 /* ShowPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC42822A09000E129C8 /* ShowPDF.swift */; };
 		054B6B2D28520863005FE558 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B6B2C28520862005FE558 /* StartVC.swift */; };
 		054B6B3328522C2F005FE558 /* FirstTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B6B3228522C2F005FE558 /* FirstTableVC.swift */; };
+		055166F3285715F500C86846 /* BuyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F2285715F500C86846 /* BuyersVC.swift */; };
+		055166F52857232F00C86846 /* SuppliersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F42857232F00C86846 /* SuppliersVC.swift */; };
+		055166F7285726A600C86846 /* ProfileTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */; };
+		0551671728572B3200C86846 /* ralewaybold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166F928572B2E00C86846 /* ralewaybold.ttf */; };
+		0551671828572B3200C86846 /* ralewayblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FA28572B2F00C86846 /* ralewayblack.ttf */; };
+		0551671928572B3200C86846 /* ralewaythin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FB28572B2F00C86846 /* ralewaythin.ttf */; };
+		0551671A28572B3200C86846 /* opensansmediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */; };
+		0551671B28572B3200C86846 /* ralewayregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FD28572B2F00C86846 /* ralewayregular.ttf */; };
+		0551671C28572B3200C86846 /* opensanslightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FE28572B2F00C86846 /* opensanslightitalic.ttf */; };
+		0551671D28572B3200C86846 /* opensansextrabolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */; };
+		0551671E28572B3200C86846 /* opensanssemibolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670028572B3000C86846 /* opensanssemibolditalic.ttf */; };
+		0551671F28572B3200C86846 /* ralewaymedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670128572B3000C86846 /* ralewaymedium.ttf */; };
+		0551672028572B3200C86846 /* ralewayextrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670228572B3000C86846 /* ralewayextrabold.ttf */; };
+		0551672128572B3200C86846 /* opensansextrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670328572B3000C86846 /* opensansextrabold.ttf */; };
+		0551672228572B3200C86846 /* opensansbolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670428572B3000C86846 /* opensansbolditalic.ttf */; };
+		0551672328572B3200C86846 /* ralewayextralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670528572B3000C86846 /* ralewayextralight.ttf */; };
+		0551672428572B3200C86846 /* opensanssemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670628572B3000C86846 /* opensanssemibold.ttf */; };
+		0551672528572B3200C86846 /* ralewayblackitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670728572B3000C86846 /* ralewayblackitalic.ttf */; };
+		0551672628572B3200C86846 /* ralewaymediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670828572B3100C86846 /* ralewaymediumitalic.ttf */; };
+		0551672728572B3200C86846 /* ralewaylightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670928572B3100C86846 /* ralewaylightitalic.ttf */; };
+		0551672828572B3200C86846 /* opensansmedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670A28572B3100C86846 /* opensansmedium.ttf */; };
+		0551672928572B3200C86846 /* ralewaysemibolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */; };
+		0551672A28572B3200C86846 /* ralewayextrabolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */; };
+		0551672B28572B3200C86846 /* opensanslight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670D28572B3100C86846 /* opensanslight.ttf */; };
+		0551672C28572B3200C86846 /* opensansitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670E28572B3100C86846 /* opensansitalic.ttf */; };
+		0551672D28572B3200C86846 /* ralewayitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670F28572B3100C86846 /* ralewayitalic.ttf */; };
+		0551672E28572B3200C86846 /* opensansregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671028572B3200C86846 /* opensansregular.ttf */; };
+		0551672F28572B3200C86846 /* ralewayextralightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671128572B3200C86846 /* ralewayextralightitalic.ttf */; };
+		0551673028572B3200C86846 /* ralewaybolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671228572B3200C86846 /* ralewaybolditalic.ttf */; };
+		0551673128572B3200C86846 /* ralewaysemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671328572B3200C86846 /* ralewaysemibold.ttf */; };
+		0551673228572B3200C86846 /* opensansbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671428572B3200C86846 /* opensansbold.ttf */; };
+		0551673328572B3200C86846 /* ralewaythinitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671528572B3200C86846 /* ralewaythinitalic.ttf */; };
+		0551673428572B3200C86846 /* ralewaylight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671628572B3200C86846 /* ralewaylight.ttf */; };
 		055A7E8428217ED300B0139C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7E8328217ED300B0139C /* ImageCell.swift */; };
 		05E56FF12854B7D400EFA634 /* CompareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E56FF02854B7D400EFA634 /* CompareVC.swift */; };
 		05F617FD282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617F2282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift */; };
@@ -154,10 +191,47 @@
 		05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WeScan-Banner.jpg"; sourceTree = "<group>"; };
 		05394D8F281C541A00D3A22E /* LinkedFrameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedFrameworks.png; sourceTree = "<group>"; };
 		05394D94281C545300D3A22E /* WeScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeScan.h; sourceTree = "<group>"; };
+		053A22C62856257C00D28205 /* CompareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareCell.swift; sourceTree = "<group>"; };
+		053A22C82856401F00D28205 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		053A22CA285641D100D28205 /* IbanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanVC.swift; sourceTree = "<group>"; };
+		053A22CC28564C1A00D28205 /* BuyersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyersCell.swift; sourceTree = "<group>"; };
 		0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndZoomVC.swift; sourceTree = "<group>"; };
 		0548EBC42822A09000E129C8 /* ShowPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPDF.swift; sourceTree = "<group>"; };
 		054B6B2C28520862005FE558 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		054B6B3228522C2F005FE558 /* FirstTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableVC.swift; sourceTree = "<group>"; };
+		055166F2285715F500C86846 /* BuyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyersVC.swift; sourceTree = "<group>"; };
+		055166F42857232F00C86846 /* SuppliersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppliersVC.swift; sourceTree = "<group>"; };
+		055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		055166F928572B2E00C86846 /* ralewaybold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaybold.ttf; sourceTree = "<group>"; };
+		055166FA28572B2F00C86846 /* ralewayblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayblack.ttf; sourceTree = "<group>"; };
+		055166FB28572B2F00C86846 /* ralewaythin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaythin.ttf; sourceTree = "<group>"; };
+		055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansmediumitalic.ttf; sourceTree = "<group>"; };
+		055166FD28572B2F00C86846 /* ralewayregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayregular.ttf; sourceTree = "<group>"; };
+		055166FE28572B2F00C86846 /* opensanslightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanslightitalic.ttf; sourceTree = "<group>"; };
+		055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansextrabolditalic.ttf; sourceTree = "<group>"; };
+		0551670028572B3000C86846 /* opensanssemibolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanssemibolditalic.ttf; sourceTree = "<group>"; };
+		0551670128572B3000C86846 /* ralewaymedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaymedium.ttf; sourceTree = "<group>"; };
+		0551670228572B3000C86846 /* ralewayextrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextrabold.ttf; sourceTree = "<group>"; };
+		0551670328572B3000C86846 /* opensansextrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansextrabold.ttf; sourceTree = "<group>"; };
+		0551670428572B3000C86846 /* opensansbolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansbolditalic.ttf; sourceTree = "<group>"; };
+		0551670528572B3000C86846 /* ralewayextralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextralight.ttf; sourceTree = "<group>"; };
+		0551670628572B3000C86846 /* opensanssemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanssemibold.ttf; sourceTree = "<group>"; };
+		0551670728572B3000C86846 /* ralewayblackitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayblackitalic.ttf; sourceTree = "<group>"; };
+		0551670828572B3100C86846 /* ralewaymediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaymediumitalic.ttf; sourceTree = "<group>"; };
+		0551670928572B3100C86846 /* ralewaylightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaylightitalic.ttf; sourceTree = "<group>"; };
+		0551670A28572B3100C86846 /* opensansmedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansmedium.ttf; sourceTree = "<group>"; };
+		0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaysemibolditalic.ttf; sourceTree = "<group>"; };
+		0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextrabolditalic.ttf; sourceTree = "<group>"; };
+		0551670D28572B3100C86846 /* opensanslight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanslight.ttf; sourceTree = "<group>"; };
+		0551670E28572B3100C86846 /* opensansitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansitalic.ttf; sourceTree = "<group>"; };
+		0551670F28572B3100C86846 /* ralewayitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayitalic.ttf; sourceTree = "<group>"; };
+		0551671028572B3200C86846 /* opensansregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansregular.ttf; sourceTree = "<group>"; };
+		0551671128572B3200C86846 /* ralewayextralightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextralightitalic.ttf; sourceTree = "<group>"; };
+		0551671228572B3200C86846 /* ralewaybolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaybolditalic.ttf; sourceTree = "<group>"; };
+		0551671328572B3200C86846 /* ralewaysemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaysemibold.ttf; sourceTree = "<group>"; };
+		0551671428572B3200C86846 /* opensansbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansbold.ttf; sourceTree = "<group>"; };
+		0551671528572B3200C86846 /* ralewaythinitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaythinitalic.ttf; sourceTree = "<group>"; };
+		0551671628572B3200C86846 /* ralewaylight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaylight.ttf; sourceTree = "<group>"; };
 		055A7E8328217ED300B0139C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		05E56FF02854B7D400EFA634 /* CompareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareVC.swift; sourceTree = "<group>"; };
 		05F617F2282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Utils.swift"; sourceTree = "<group>"; };
@@ -204,6 +278,7 @@
 		05394CEF281C4CEF00D3A22E /* scannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				055166F828572AB000C86846 /* Font */,
 				05F617F1282BC35200B32571 /* Extensions */,
 				05394D7B281C53D100D3A22E /* Common */,
 				05394D74281C53CB00D3A22E /* Edit */,
@@ -234,6 +309,13 @@
 				0515EAC22853953F00575C10 /* ProfileVC.swift */,
 				0515EAC428539FC100575C10 /* SecondTableVC.swift */,
 				05E56FF02854B7D400EFA634 /* CompareVC.swift */,
+				053A22C62856257C00D28205 /* CompareCell.swift */,
+				053A22C82856401F00D28205 /* CheckBox.swift */,
+				053A22CA285641D100D28205 /* IbanVC.swift */,
+				053A22CC28564C1A00D28205 /* BuyersCell.swift */,
+				055166F2285715F500C86846 /* BuyersVC.swift */,
+				055166F42857232F00C86846 /* SuppliersVC.swift */,
+				055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */,
 			);
 			path = scannerApp;
 			sourceTree = "<group>";
@@ -357,6 +439,43 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		055166F828572AB000C86846 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0551671428572B3200C86846 /* opensansbold.ttf */,
+				0551670428572B3000C86846 /* opensansbolditalic.ttf */,
+				0551670328572B3000C86846 /* opensansextrabold.ttf */,
+				055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */,
+				0551670E28572B3100C86846 /* opensansitalic.ttf */,
+				0551670D28572B3100C86846 /* opensanslight.ttf */,
+				055166FE28572B2F00C86846 /* opensanslightitalic.ttf */,
+				0551670A28572B3100C86846 /* opensansmedium.ttf */,
+				055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */,
+				0551671028572B3200C86846 /* opensansregular.ttf */,
+				0551670628572B3000C86846 /* opensanssemibold.ttf */,
+				0551670028572B3000C86846 /* opensanssemibolditalic.ttf */,
+				055166FA28572B2F00C86846 /* ralewayblack.ttf */,
+				0551670728572B3000C86846 /* ralewayblackitalic.ttf */,
+				055166F928572B2E00C86846 /* ralewaybold.ttf */,
+				0551671228572B3200C86846 /* ralewaybolditalic.ttf */,
+				0551670228572B3000C86846 /* ralewayextrabold.ttf */,
+				0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */,
+				0551670528572B3000C86846 /* ralewayextralight.ttf */,
+				0551671128572B3200C86846 /* ralewayextralightitalic.ttf */,
+				0551670F28572B3100C86846 /* ralewayitalic.ttf */,
+				0551671628572B3200C86846 /* ralewaylight.ttf */,
+				0551670928572B3100C86846 /* ralewaylightitalic.ttf */,
+				0551670128572B3000C86846 /* ralewaymedium.ttf */,
+				0551670828572B3100C86846 /* ralewaymediumitalic.ttf */,
+				055166FD28572B2F00C86846 /* ralewayregular.ttf */,
+				0551671328572B3200C86846 /* ralewaysemibold.ttf */,
+				0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */,
+				055166FB28572B2F00C86846 /* ralewaythin.ttf */,
+				0551671528572B3200C86846 /* ralewaythinitalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		05F617F1282BC35200B32571 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,9 +571,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0551672E28572B3200C86846 /* opensansregular.ttf in Resources */,
+				0551672228572B3200C86846 /* opensansbolditalic.ttf in Resources */,
 				05394D4B281C53A800D3A22E /* rotate@3x.png in Resources */,
 				05394D4D281C53A800D3A22E /* rotate@2x.png in Resources */,
 				05394D4A281C53A800D3A22E /* flash.png in Resources */,
+				0551672828572B3200C86846 /* opensansmedium.ttf in Resources */,
+				0551671928572B3200C86846 /* ralewaythin.ttf in Resources */,
 				05394D49281C53A800D3A22E /* Localizable.strings in Resources */,
 				05394CFD281C4D0400D3A22E /* LaunchScreen.storyboard in Resources */,
 				05394D90281C541A00D3A22E /* WeScan.gif in Resources */,
@@ -462,15 +585,41 @@
 				05394D4F281C53A800D3A22E /* flashUnavailable@2x.png in Resources */,
 				05394D51281C53A800D3A22E /* flashUnavailable@3x.png in Resources */,
 				05394D53281C53A800D3A22E /* enhance@3x.png in Resources */,
+				0551671A28572B3200C86846 /* opensansmediumitalic.ttf in Resources */,
 				05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */,
+				0551672928572B3200C86846 /* ralewaysemibolditalic.ttf in Resources */,
+				0551671B28572B3200C86846 /* ralewayregular.ttf in Resources */,
 				05394D4C281C53A800D3A22E /* rotate.png in Resources */,
+				0551672B28572B3200C86846 /* opensanslight.ttf in Resources */,
+				0551672F28572B3200C86846 /* ralewayextralightitalic.ttf in Resources */,
+				0551672328572B3200C86846 /* ralewayextralight.ttf in Resources */,
+				0551672728572B3200C86846 /* ralewaylightitalic.ttf in Resources */,
 				05394D91281C541A00D3A22E /* project.png in Resources */,
+				0551672028572B3200C86846 /* ralewayextrabold.ttf in Resources */,
 				05394D15281C537F00D3A22E /* Localizable.strings in Resources */,
+				0551671F28572B3200C86846 /* ralewaymedium.ttf in Resources */,
+				0551673428572B3200C86846 /* ralewaylight.ttf in Resources */,
+				0551671D28572B3200C86846 /* opensansextrabolditalic.ttf in Resources */,
 				05394D52281C53A800D3A22E /* flash@3x.png in Resources */,
 				05394D4E281C53A800D3A22E /* flash@2x.png in Resources */,
+				0551673228572B3200C86846 /* opensansbold.ttf in Resources */,
+				0551672428572B3200C86846 /* opensanssemibold.ttf in Resources */,
 				05394D55281C53A800D3A22E /* enhance.png in Resources */,
+				0551672528572B3200C86846 /* ralewayblackitalic.ttf in Resources */,
+				0551671728572B3200C86846 /* ralewaybold.ttf in Resources */,
+				0551672D28572B3200C86846 /* ralewayitalic.ttf in Resources */,
+				0551673128572B3200C86846 /* ralewaysemibold.ttf in Resources */,
+				0551671C28572B3200C86846 /* opensanslightitalic.ttf in Resources */,
 				05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */,
 				05394D54281C53A800D3A22E /* enhance@2x.png in Resources */,
+				0551672A28572B3200C86846 /* ralewayextrabolditalic.ttf in Resources */,
+				0551673328572B3200C86846 /* ralewaythinitalic.ttf in Resources */,
+				0551673028572B3200C86846 /* ralewaybolditalic.ttf in Resources */,
+				0551671E28572B3200C86846 /* opensanssemibolditalic.ttf in Resources */,
+				0551671828572B3200C86846 /* ralewayblack.ttf in Resources */,
+				0551672128572B3200C86846 /* opensansextrabold.ttf in Resources */,
+				0551672628572B3200C86846 /* ralewaymediumitalic.ttf in Resources */,
+				0551672C28572B3200C86846 /* opensansitalic.ttf in Resources */,
 				05394CFA281C4D0400D3A22E /* Assets.xcassets in Resources */,
 				05394CF8281C4CEF00D3A22E /* Main.storyboard in Resources */,
 			);
@@ -503,7 +652,9 @@
 				05394CF1281C4CEF00D3A22E /* AppDelegate.swift in Sources */,
 				05F617FF282BC35200B32571 /* CGSize+Utils.swift in Sources */,
 				055A7E8428217ED300B0139C /* ImageCell.swift in Sources */,
+				053A22CD28564C1A00D28205 /* BuyersCell.swift in Sources */,
 				05394D0E281C52B200D3A22E /* CaptureSession+Flash.swift in Sources */,
+				055166F7285726A600C86846 /* ProfileTableViewControllerDelegate.swift in Sources */,
 				054B6B2D28520863005FE558 /* StartVC.swift in Sources */,
 				05394D87281C53D200D3A22E /* Quadrilateral.swift in Sources */,
 				05394D22281C538800D3A22E /* ScannerViewController.swift in Sources */,
@@ -518,18 +669,23 @@
 				05394D7A281C53CB00D3A22E /* EditScanViewController.swift in Sources */,
 				0535A71D281D561700FBFD99 /* MultiPageVC.swift in Sources */,
 				05394D83281C53D200D3A22E /* Error.swift in Sources */,
+				055166F3285715F500C86846 /* BuyersVC.swift in Sources */,
 				05F61803282BC35200B32571 /* CGRect+Utils.swift in Sources */,
 				054B6B3328522C2F005FE558 /* FirstTableVC.swift in Sources */,
 				05F61802282BC35200B32571 /* CGAffineTransform+Utils.swift in Sources */,
+				055166F52857232F00C86846 /* SuppliersVC.swift in Sources */,
 				05394D10281C52B200D3A22E /* CaptureSession.swift in Sources */,
 				05394D5A281C53AF00D3A22E /* Transformable.swift in Sources */,
 				05394D85281C53D200D3A22E /* CIRectangleDetector.swift in Sources */,
 				05F617FD282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift in Sources */,
 				0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */,
 				0548EBC52822A09000E129C8 /* ShowPDF.swift in Sources */,
+				053A22C92856401F00D28205 /* CheckBox.swift in Sources */,
 				0515EAC528539FC100575C10 /* SecondTableVC.swift in Sources */,
 				05394D20281C538800D3A22E /* CameraScannerViewController.swift in Sources */,
 				05F61805282BC35200B32571 /* UIImage+Orientation.swift in Sources */,
+				053A22CB285641D100D28205 /* IbanVC.swift in Sources */,
+				053A22C72856257C00D28205 /* CompareCell.swift in Sources */,
 				0535A719281D494200FBFD99 /* ReviewVC.swift in Sources */,
 				05F61804282BC35200B32571 /* Array+Utils.swift in Sources */,
 			);

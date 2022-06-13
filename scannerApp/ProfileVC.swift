@@ -16,5 +16,10 @@ class ProfileVC: UIViewController {
         self.navigationBarr()
         self.toolbarr()
         labelAbout.text = "A1 Hrvatska društvo s ograničenom odgovornošću za usluge javnih telekomunikacija"
+        
+        tableViewController = self.children[0] as? SecondTableVC
+        tableViewController?.delegate = self
     }
+    
+    var tableViewController: SecondTableVC?
 }

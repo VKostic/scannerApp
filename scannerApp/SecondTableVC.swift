@@ -1,16 +1,17 @@
 //
-//  FirstTableVC.swift
+//  SecondTableVC.swift
 //  scannerApp
 //
-//  Created by Vladica Kostic on 9.6.22..
+//  Created by Vladica Kostic on 10.6.22..
 //
 
 import UIKit
 
-class FirstTableVC: UITableViewController {
+class SecondTableVC: UITableViewController {
 
-    
-    @IBOutlet var firstTableView: UITableView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     weak var delegate: ProfileTableViewControllerDelegate?
     
@@ -20,7 +21,7 @@ class FirstTableVC: UITableViewController {
 
         if(indexPath.row == 0){
             if let delegate = delegate {
-                delegate.showProfile()
+                delegate.showIban()
             }
         }
         if(indexPath.row == 1){
@@ -30,17 +31,8 @@ class FirstTableVC: UITableViewController {
         }
         if(indexPath.row == 2){
             if let delegate = delegate {
-                delegate.showBuyers()
+                delegate.showIban()
             }
         }
-        if(indexPath.row == 3){
-            if let delegate = delegate {
-                delegate.showSuppliers()
-            }
-        }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }

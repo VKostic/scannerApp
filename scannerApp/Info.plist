@@ -50,5 +50,38 @@
 	<false/>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>opensansmediumitalic.ttf</string>
+		<string>ralewaysemibolditalic.ttf</string>
+		<string>opensanslightitalic.ttf</string>
+		<string>ralewayextralightitalic.ttf</string>
+		<string>opensansregular.ttf</string>
+		<string>opensansbold.ttf</string>
+		<string>opensanslight.ttf</string>
+		<string>opensanssemibold.ttf</string>
+		<string>ralewaymediumitalic.ttf</string>
+		<string>ralewaylight.ttf</string>
+		<string>opensanssemibolditalic.ttf</string>
+		<string>opensansbolditalic.ttf</string>
+		<string>opensansitalic.ttf</string>
+		<string>opensansextrabolditalic.ttf</string>
+		<string>ralewayitalic.ttf</string>
+		<string>ralewayblack.ttf</string>
+		<string>ralewayextralight.ttf</string>
+		<string>ralewayextrabolditalic.ttf</string>
+		<string>ralewayregular.ttf</string>
+		<string>ralewaymedium.ttf</string>
+		<string>ralewaythinitalic.ttf</string>
+		<string>ralewaybolditalic.ttf</string>
+		<string>ralewayblackitalic.ttf</string>
+		<string>opensansmedium.ttf</string>
+		<string>opensansextrabold.ttf</string>
+		<string>ralewaybold.ttf</string>
+		<string>ralewaylightitalic.ttf</string>
+		<string>ralewayextrabold.ttf</string>
+		<string>ralewaythin.ttf</string>
+		<string>ralewaysemibold.ttf</string>
+	</array>
 </dict>
 </plist>
