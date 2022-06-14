@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     let Your_api = "jksdxjjfsdkhxyffiudfvhxnndueewpefodkcm439tufjifoas9"
     let user_eMail = "test1@email.com"
     let user_IMEI = "imei1"
-    let eMail = "test1@email.com"
     
     let buttonAttributes: [NSAttributedString.Key: Any] = [
           .font: UIFont.systemFont(ofSize: 18),
@@ -27,8 +26,13 @@ class ViewController: UIViewController {
         let url = "https://mojeuredproxy-test.moj-eracun.hr/api/BI/Subject_SubjectHealthConfiguration/\(user_eMail)/\(user_IMEI)"
         let headers: HTTPHeaders = [ "ApiKey" : "\(Your_api)"]
         
-        AF.request(url, method: .get, headers: headers).responseString { response in
-            print(response.result)
+        let request = AF.request(url, method: .get, headers: headers)
+        
+        request.responseDecodable(of: [Company].self) { (response) in
+            guard let companies = response.value else { return }
+            for i in companies {
+                print("Id:", i.id)
+            }
         }
     }
     
