@@ -64,6 +64,7 @@
 		053A22C92856401F00D28205 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22C82856401F00D28205 /* CheckBox.swift */; };
 		053A22CB285641D100D28205 /* IbanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CA285641D100D28205 /* IbanVC.swift */; };
 		053A22CD28564C1A00D28205 /* BuyersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CC28564C1A00D28205 /* BuyersCell.swift */; };
+		0544D26928588A7400D21A3F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D26828588A7400D21A3F /* Company.swift */; };
 		0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */; };
 		0548EBC52822A09000E129C8 /* ShowPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC42822A09000E129C8 /* ShowPDF.swift */; };
 		054B6B2D28520863005FE558 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B6B2C28520862005FE558 /* StartVC.swift */; };
@@ -196,6 +197,7 @@
 		053A22C82856401F00D28205 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		053A22CA285641D100D28205 /* IbanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanVC.swift; sourceTree = "<group>"; };
 		053A22CC28564C1A00D28205 /* BuyersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyersCell.swift; sourceTree = "<group>"; };
+		0544D26828588A7400D21A3F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndZoomVC.swift; sourceTree = "<group>"; };
 		0548EBC42822A09000E129C8 /* ShowPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPDF.swift; sourceTree = "<group>"; };
 		054B6B2C28520862005FE558 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		05394CEF281C4CEF00D3A22E /* scannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				0544D26728588A1E00D21A3F /* Structs */,
 				055166F828572AB000C86846 /* Font */,
 				05F617F1282BC35200B32571 /* Extensions */,
 				05394D7B281C53D100D3A22E /* Common */,
@@ -446,6 +449,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		0544D26728588A1E00D21A3F /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				0544D26828588A7400D21A3F /* Company.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		055166F828572AB000C86846 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,7 +518,6 @@
 				FB89A48F2A86B9A25C7BAE08 /* Pods-scannerApp.debug.xcconfig */,
 				E6C1241566F540B60F30257E /* Pods-scannerApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -739,6 +749,7 @@
 				0535A71D281D561700FBFD99 /* MultiPageVC.swift in Sources */,
 				05394D83281C53D200D3A22E /* Error.swift in Sources */,
 				055166F3285715F500C86846 /* BuyersVC.swift in Sources */,
+				0544D26928588A7400D21A3F /* Company.swift in Sources */,
 				05F61803282BC35200B32571 /* CGRect+Utils.swift in Sources */,
 				054B6B3328522C2F005FE558 /* FirstTableVC.swift in Sources */,
 				05F61802282BC35200B32571 /* CGAffineTransform+Utils.swift in Sources */,

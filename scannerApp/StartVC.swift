@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Alamofire
 
 class StartVC: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBarr()
@@ -16,9 +17,26 @@ class StartVC: UIViewController {
         
         tableViewController = self.children[0] as? FirstTableVC
         tableViewController?.delegate = self
+        callForHealth()
     }
     
     var tableViewController: FirstTableVC?
+    
+    let Your_token = "fd81ba38-7e7c-49ba-8770-89321e2e0e04"
+    let Your_api = "jksdxjjfsdkhxyffiudfvhxnndueewpefodkcm439tufjifoas9"
+    let user_eMail = "test1@email.com"
+    let user_IMEI = "imei1"
+    var companiesHealth: [Company]?
+    
+    func callForHealth() {
+        let url = "https://mojeuredproxy-test.moj-eracun.hr/api/BI/Subject_SubjectHealthConfiguration/\(user_eMail)/\(user_IMEI)"
+        let headers: HTTPHeaders = [ "ApiKey" : "\(Your_api)"]
+        
+        AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: [Company].self) { (response) in
+            guard let companies = response.value else { return }
+            self.companiesHealth = companies
+        }
+    }
     
     
 //    // MARK: - Toolbar
