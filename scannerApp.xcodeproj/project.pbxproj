@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0515EAC12853706700575C10 /* ReusableToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515EAC02853706600575C10 /* ReusableToolbar.swift */; };
+		0515EAC32853953F00575C10 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515EAC22853953F00575C10 /* ProfileVC.swift */; };
+		0515EAC528539FC100575C10 /* SecondTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515EAC428539FC100575C10 /* SecondTableVC.swift */; };
 		0535A715281D35E200FBFD99 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535A714281D35E200FBFD99 /* ScannerVC.swift */; };
 		0535A717281D3E9800FBFD99 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535A716281D3E9800FBFD99 /* EditVC.swift */; };
 		0535A719281D494200FBFD99 /* ReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535A718281D494200FBFD99 /* ReviewVC.swift */; };
@@ -57,9 +60,49 @@
 		05394D91281C541A00D3A22E /* project.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8D281C541A00D3A22E /* project.png */; };
 		05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */; };
 		05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 05394D8F281C541A00D3A22E /* LinkedFrameworks.png */; };
+		053A22C72856257C00D28205 /* CompareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22C62856257C00D28205 /* CompareCell.swift */; };
+		053A22C92856401F00D28205 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22C82856401F00D28205 /* CheckBox.swift */; };
+		053A22CB285641D100D28205 /* IbanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CA285641D100D28205 /* IbanVC.swift */; };
+		053A22CD28564C1A00D28205 /* BuyersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A22CC28564C1A00D28205 /* BuyersCell.swift */; };
 		0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */; };
 		0548EBC52822A09000E129C8 /* ShowPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548EBC42822A09000E129C8 /* ShowPDF.swift */; };
+		054B6B2D28520863005FE558 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B6B2C28520862005FE558 /* StartVC.swift */; };
+		054B6B3328522C2F005FE558 /* FirstTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B6B3228522C2F005FE558 /* FirstTableVC.swift */; };
+		055166F3285715F500C86846 /* BuyersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F2285715F500C86846 /* BuyersVC.swift */; };
+		055166F52857232F00C86846 /* SuppliersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F42857232F00C86846 /* SuppliersVC.swift */; };
+		055166F7285726A600C86846 /* ProfileTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */; };
+		0551671728572B3200C86846 /* ralewaybold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166F928572B2E00C86846 /* ralewaybold.ttf */; };
+		0551671828572B3200C86846 /* ralewayblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FA28572B2F00C86846 /* ralewayblack.ttf */; };
+		0551671928572B3200C86846 /* ralewaythin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FB28572B2F00C86846 /* ralewaythin.ttf */; };
+		0551671A28572B3200C86846 /* opensansmediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */; };
+		0551671B28572B3200C86846 /* ralewayregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FD28572B2F00C86846 /* ralewayregular.ttf */; };
+		0551671C28572B3200C86846 /* opensanslightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FE28572B2F00C86846 /* opensanslightitalic.ttf */; };
+		0551671D28572B3200C86846 /* opensansextrabolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */; };
+		0551671E28572B3200C86846 /* opensanssemibolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670028572B3000C86846 /* opensanssemibolditalic.ttf */; };
+		0551671F28572B3200C86846 /* ralewaymedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670128572B3000C86846 /* ralewaymedium.ttf */; };
+		0551672028572B3200C86846 /* ralewayextrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670228572B3000C86846 /* ralewayextrabold.ttf */; };
+		0551672128572B3200C86846 /* opensansextrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670328572B3000C86846 /* opensansextrabold.ttf */; };
+		0551672228572B3200C86846 /* opensansbolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670428572B3000C86846 /* opensansbolditalic.ttf */; };
+		0551672328572B3200C86846 /* ralewayextralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670528572B3000C86846 /* ralewayextralight.ttf */; };
+		0551672428572B3200C86846 /* opensanssemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670628572B3000C86846 /* opensanssemibold.ttf */; };
+		0551672528572B3200C86846 /* ralewayblackitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670728572B3000C86846 /* ralewayblackitalic.ttf */; };
+		0551672628572B3200C86846 /* ralewaymediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670828572B3100C86846 /* ralewaymediumitalic.ttf */; };
+		0551672728572B3200C86846 /* ralewaylightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670928572B3100C86846 /* ralewaylightitalic.ttf */; };
+		0551672828572B3200C86846 /* opensansmedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670A28572B3100C86846 /* opensansmedium.ttf */; };
+		0551672928572B3200C86846 /* ralewaysemibolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */; };
+		0551672A28572B3200C86846 /* ralewayextrabolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */; };
+		0551672B28572B3200C86846 /* opensanslight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670D28572B3100C86846 /* opensanslight.ttf */; };
+		0551672C28572B3200C86846 /* opensansitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670E28572B3100C86846 /* opensansitalic.ttf */; };
+		0551672D28572B3200C86846 /* ralewayitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551670F28572B3100C86846 /* ralewayitalic.ttf */; };
+		0551672E28572B3200C86846 /* opensansregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671028572B3200C86846 /* opensansregular.ttf */; };
+		0551672F28572B3200C86846 /* ralewayextralightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671128572B3200C86846 /* ralewayextralightitalic.ttf */; };
+		0551673028572B3200C86846 /* ralewaybolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671228572B3200C86846 /* ralewaybolditalic.ttf */; };
+		0551673128572B3200C86846 /* ralewaysemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671328572B3200C86846 /* ralewaysemibold.ttf */; };
+		0551673228572B3200C86846 /* opensansbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671428572B3200C86846 /* opensansbold.ttf */; };
+		0551673328572B3200C86846 /* ralewaythinitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671528572B3200C86846 /* ralewaythinitalic.ttf */; };
+		0551673428572B3200C86846 /* ralewaylight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0551671628572B3200C86846 /* ralewaylight.ttf */; };
 		055A7E8428217ED300B0139C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7E8328217ED300B0139C /* ImageCell.swift */; };
+		05E56FF12854B7D400EFA634 /* CompareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E56FF02854B7D400EFA634 /* CompareVC.swift */; };
 		05F617FD282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617F2282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift */; };
 		05F617FE282BC35200B32571 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617F3282BC35200B32571 /* CGPoint+Utils.swift */; };
 		05F617FF282BC35200B32571 /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617F4282BC35200B32571 /* CGSize+Utils.swift */; };
@@ -71,9 +114,13 @@
 		05F61805282BC35200B32571 /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617FA282BC35200B32571 /* UIImage+Orientation.swift */; };
 		05F61806282BC35200B32571 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617FB282BC35200B32571 /* UIImage+Utils.swift */; };
 		05F61807282BC35200B32571 /* UIImage+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F617FC282BC35200B32571 /* UIImage+SFSymbol.swift */; };
+		9A6988D47E200894B4E1631E /* Pods_scannerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A2630F6D788AE0D2C6F57 /* Pods_scannerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0515EAC02853706600575C10 /* ReusableToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableToolbar.swift; sourceTree = "<group>"; };
+		0515EAC22853953F00575C10 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		0515EAC428539FC100575C10 /* SecondTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableVC.swift; sourceTree = "<group>"; };
 		0535A714281D35E200FBFD99 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		0535A716281D3E9800FBFD99 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		0535A718281D494200FBFD99 /* ReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewVC.swift; sourceTree = "<group>"; };
@@ -145,9 +192,49 @@
 		05394D8E281C541A00D3A22E /* WeScan-Banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WeScan-Banner.jpg"; sourceTree = "<group>"; };
 		05394D8F281C541A00D3A22E /* LinkedFrameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LinkedFrameworks.png; sourceTree = "<group>"; };
 		05394D94281C545300D3A22E /* WeScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeScan.h; sourceTree = "<group>"; };
+		053A22C62856257C00D28205 /* CompareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareCell.swift; sourceTree = "<group>"; };
+		053A22C82856401F00D28205 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		053A22CA285641D100D28205 /* IbanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanVC.swift; sourceTree = "<group>"; };
+		053A22CC28564C1A00D28205 /* BuyersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyersCell.swift; sourceTree = "<group>"; };
 		0548EBC228226B2C00E129C8 /* RotateAndZoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndZoomVC.swift; sourceTree = "<group>"; };
 		0548EBC42822A09000E129C8 /* ShowPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPDF.swift; sourceTree = "<group>"; };
+		054B6B2C28520862005FE558 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		054B6B3228522C2F005FE558 /* FirstTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableVC.swift; sourceTree = "<group>"; };
+		055166F2285715F500C86846 /* BuyersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyersVC.swift; sourceTree = "<group>"; };
+		055166F42857232F00C86846 /* SuppliersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppliersVC.swift; sourceTree = "<group>"; };
+		055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		055166F928572B2E00C86846 /* ralewaybold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaybold.ttf; sourceTree = "<group>"; };
+		055166FA28572B2F00C86846 /* ralewayblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayblack.ttf; sourceTree = "<group>"; };
+		055166FB28572B2F00C86846 /* ralewaythin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaythin.ttf; sourceTree = "<group>"; };
+		055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansmediumitalic.ttf; sourceTree = "<group>"; };
+		055166FD28572B2F00C86846 /* ralewayregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayregular.ttf; sourceTree = "<group>"; };
+		055166FE28572B2F00C86846 /* opensanslightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanslightitalic.ttf; sourceTree = "<group>"; };
+		055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansextrabolditalic.ttf; sourceTree = "<group>"; };
+		0551670028572B3000C86846 /* opensanssemibolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanssemibolditalic.ttf; sourceTree = "<group>"; };
+		0551670128572B3000C86846 /* ralewaymedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaymedium.ttf; sourceTree = "<group>"; };
+		0551670228572B3000C86846 /* ralewayextrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextrabold.ttf; sourceTree = "<group>"; };
+		0551670328572B3000C86846 /* opensansextrabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansextrabold.ttf; sourceTree = "<group>"; };
+		0551670428572B3000C86846 /* opensansbolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansbolditalic.ttf; sourceTree = "<group>"; };
+		0551670528572B3000C86846 /* ralewayextralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextralight.ttf; sourceTree = "<group>"; };
+		0551670628572B3000C86846 /* opensanssemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanssemibold.ttf; sourceTree = "<group>"; };
+		0551670728572B3000C86846 /* ralewayblackitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayblackitalic.ttf; sourceTree = "<group>"; };
+		0551670828572B3100C86846 /* ralewaymediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaymediumitalic.ttf; sourceTree = "<group>"; };
+		0551670928572B3100C86846 /* ralewaylightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaylightitalic.ttf; sourceTree = "<group>"; };
+		0551670A28572B3100C86846 /* opensansmedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansmedium.ttf; sourceTree = "<group>"; };
+		0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaysemibolditalic.ttf; sourceTree = "<group>"; };
+		0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextrabolditalic.ttf; sourceTree = "<group>"; };
+		0551670D28572B3100C86846 /* opensanslight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensanslight.ttf; sourceTree = "<group>"; };
+		0551670E28572B3100C86846 /* opensansitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansitalic.ttf; sourceTree = "<group>"; };
+		0551670F28572B3100C86846 /* ralewayitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayitalic.ttf; sourceTree = "<group>"; };
+		0551671028572B3200C86846 /* opensansregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansregular.ttf; sourceTree = "<group>"; };
+		0551671128572B3200C86846 /* ralewayextralightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewayextralightitalic.ttf; sourceTree = "<group>"; };
+		0551671228572B3200C86846 /* ralewaybolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaybolditalic.ttf; sourceTree = "<group>"; };
+		0551671328572B3200C86846 /* ralewaysemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaysemibold.ttf; sourceTree = "<group>"; };
+		0551671428572B3200C86846 /* opensansbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensansbold.ttf; sourceTree = "<group>"; };
+		0551671528572B3200C86846 /* ralewaythinitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaythinitalic.ttf; sourceTree = "<group>"; };
+		0551671628572B3200C86846 /* ralewaylight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaylight.ttf; sourceTree = "<group>"; };
 		055A7E8328217ED300B0139C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		05E56FF02854B7D400EFA634 /* CompareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareVC.swift; sourceTree = "<group>"; };
 		05F617F2282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Utils.swift"; sourceTree = "<group>"; };
 		05F617F3282BC35200B32571 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
 		05F617F4282BC35200B32571 /* CGSize+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Utils.swift"; sourceTree = "<group>"; };
@@ -159,6 +246,9 @@
 		05F617FA282BC35200B32571 /* UIImage+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
 		05F617FB282BC35200B32571 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		05F617FC282BC35200B32571 /* UIImage+SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SFSymbol.swift"; sourceTree = "<group>"; };
+		B75A2630F6D788AE0D2C6F57 /* Pods_scannerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scannerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C1241566F540B60F30257E /* Pods-scannerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scannerApp.release.xcconfig"; path = "Target Support Files/Pods-scannerApp/Pods-scannerApp.release.xcconfig"; sourceTree = "<group>"; };
+		FB89A48F2A86B9A25C7BAE08 /* Pods-scannerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scannerApp.debug.xcconfig"; path = "Target Support Files/Pods-scannerApp/Pods-scannerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6988D47E200894B4E1631E /* Pods_scannerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +269,8 @@
 				05394D8B281C541A00D3A22E /* Assets */,
 				05394CEF281C4CEF00D3A22E /* scannerApp */,
 				05394CEE281C4CEF00D3A22E /* Products */,
+				2460EC41FE9DC1CE12999486 /* Pods */,
+				6D4AD0CDDC3DC96ECAC0FBB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +285,7 @@
 		05394CEF281C4CEF00D3A22E /* scannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				055166F828572AB000C86846 /* Font */,
 				05F617F1282BC35200B32571 /* Extensions */,
 				05394D7B281C53D100D3A22E /* Common */,
 				05394D74281C53CB00D3A22E /* Edit */,
@@ -216,6 +310,19 @@
 				0535A71C281D561700FBFD99 /* MultiPageVC.swift */,
 				055A7E8328217ED300B0139C /* ImageCell.swift */,
 				0548EBC42822A09000E129C8 /* ShowPDF.swift */,
+				054B6B2C28520862005FE558 /* StartVC.swift */,
+				054B6B3228522C2F005FE558 /* FirstTableVC.swift */,
+				0515EAC02853706600575C10 /* ReusableToolbar.swift */,
+				0515EAC22853953F00575C10 /* ProfileVC.swift */,
+				0515EAC428539FC100575C10 /* SecondTableVC.swift */,
+				05E56FF02854B7D400EFA634 /* CompareVC.swift */,
+				053A22C62856257C00D28205 /* CompareCell.swift */,
+				053A22C82856401F00D28205 /* CheckBox.swift */,
+				053A22CA285641D100D28205 /* IbanVC.swift */,
+				053A22CC28564C1A00D28205 /* BuyersCell.swift */,
+				055166F2285715F500C86846 /* BuyersVC.swift */,
+				055166F42857232F00C86846 /* SuppliersVC.swift */,
+				055166F6285726A600C86846 /* ProfileTableViewControllerDelegate.swift */,
 			);
 			path = scannerApp;
 			sourceTree = "<group>";
@@ -339,6 +446,43 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		055166F828572AB000C86846 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0551671428572B3200C86846 /* opensansbold.ttf */,
+				0551670428572B3000C86846 /* opensansbolditalic.ttf */,
+				0551670328572B3000C86846 /* opensansextrabold.ttf */,
+				055166FF28572B3000C86846 /* opensansextrabolditalic.ttf */,
+				0551670E28572B3100C86846 /* opensansitalic.ttf */,
+				0551670D28572B3100C86846 /* opensanslight.ttf */,
+				055166FE28572B2F00C86846 /* opensanslightitalic.ttf */,
+				0551670A28572B3100C86846 /* opensansmedium.ttf */,
+				055166FC28572B2F00C86846 /* opensansmediumitalic.ttf */,
+				0551671028572B3200C86846 /* opensansregular.ttf */,
+				0551670628572B3000C86846 /* opensanssemibold.ttf */,
+				0551670028572B3000C86846 /* opensanssemibolditalic.ttf */,
+				055166FA28572B2F00C86846 /* ralewayblack.ttf */,
+				0551670728572B3000C86846 /* ralewayblackitalic.ttf */,
+				055166F928572B2E00C86846 /* ralewaybold.ttf */,
+				0551671228572B3200C86846 /* ralewaybolditalic.ttf */,
+				0551670228572B3000C86846 /* ralewayextrabold.ttf */,
+				0551670C28572B3100C86846 /* ralewayextrabolditalic.ttf */,
+				0551670528572B3000C86846 /* ralewayextralight.ttf */,
+				0551671128572B3200C86846 /* ralewayextralightitalic.ttf */,
+				0551670F28572B3100C86846 /* ralewayitalic.ttf */,
+				0551671628572B3200C86846 /* ralewaylight.ttf */,
+				0551670928572B3100C86846 /* ralewaylightitalic.ttf */,
+				0551670128572B3000C86846 /* ralewaymedium.ttf */,
+				0551670828572B3100C86846 /* ralewaymediumitalic.ttf */,
+				055166FD28572B2F00C86846 /* ralewayregular.ttf */,
+				0551671328572B3200C86846 /* ralewaysemibold.ttf */,
+				0551670B28572B3100C86846 /* ralewaysemibolditalic.ttf */,
+				055166FB28572B2F00C86846 /* ralewaythin.ttf */,
+				0551671528572B3200C86846 /* ralewaythinitalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		05F617F1282BC35200B32571 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +501,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2460EC41FE9DC1CE12999486 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A48F2A86B9A25C7BAE08 /* Pods-scannerApp.debug.xcconfig */,
+				E6C1241566F540B60F30257E /* Pods-scannerApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D4AD0CDDC3DC96ECAC0FBB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75A2630F6D788AE0D2C6F57 /* Pods_scannerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,9 +526,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05394D01281C4D0400D3A22E /* Build configuration list for PBXNativeTarget "scannerApp" */;
 			buildPhases = (
+				66290DBB1C3CC8B0B7898B1D /* [CP] Check Pods Manifest.lock */,
 				05394CE9281C4CEF00D3A22E /* Sources */,
 				05394CEA281C4CEF00D3A22E /* Frameworks */,
 				05394CEB281C4CEF00D3A22E /* Resources */,
+				BB674FF52754BA6BA7D8F7A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,9 +598,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0551672E28572B3200C86846 /* opensansregular.ttf in Resources */,
+				0551672228572B3200C86846 /* opensansbolditalic.ttf in Resources */,
 				05394D4B281C53A800D3A22E /* rotate@3x.png in Resources */,
 				05394D4D281C53A800D3A22E /* rotate@2x.png in Resources */,
 				05394D4A281C53A800D3A22E /* flash.png in Resources */,
+				0551672828572B3200C86846 /* opensansmedium.ttf in Resources */,
+				0551671928572B3200C86846 /* ralewaythin.ttf in Resources */,
 				05394D49281C53A800D3A22E /* Localizable.strings in Resources */,
 				05394CFD281C4D0400D3A22E /* LaunchScreen.storyboard in Resources */,
 				05394D90281C541A00D3A22E /* WeScan.gif in Resources */,
@@ -444,21 +612,89 @@
 				05394D4F281C53A800D3A22E /* flashUnavailable@2x.png in Resources */,
 				05394D51281C53A800D3A22E /* flashUnavailable@3x.png in Resources */,
 				05394D53281C53A800D3A22E /* enhance@3x.png in Resources */,
+				0551671A28572B3200C86846 /* opensansmediumitalic.ttf in Resources */,
 				05394D93281C541A00D3A22E /* LinkedFrameworks.png in Resources */,
+				0551672928572B3200C86846 /* ralewaysemibolditalic.ttf in Resources */,
+				0551671B28572B3200C86846 /* ralewayregular.ttf in Resources */,
 				05394D4C281C53A800D3A22E /* rotate.png in Resources */,
+				0551672B28572B3200C86846 /* opensanslight.ttf in Resources */,
+				0551672F28572B3200C86846 /* ralewayextralightitalic.ttf in Resources */,
+				0551672328572B3200C86846 /* ralewayextralight.ttf in Resources */,
+				0551672728572B3200C86846 /* ralewaylightitalic.ttf in Resources */,
 				05394D91281C541A00D3A22E /* project.png in Resources */,
+				0551672028572B3200C86846 /* ralewayextrabold.ttf in Resources */,
 				05394D15281C537F00D3A22E /* Localizable.strings in Resources */,
+				0551671F28572B3200C86846 /* ralewaymedium.ttf in Resources */,
+				0551673428572B3200C86846 /* ralewaylight.ttf in Resources */,
+				0551671D28572B3200C86846 /* opensansextrabolditalic.ttf in Resources */,
 				05394D52281C53A800D3A22E /* flash@3x.png in Resources */,
 				05394D4E281C53A800D3A22E /* flash@2x.png in Resources */,
+				0551673228572B3200C86846 /* opensansbold.ttf in Resources */,
+				0551672428572B3200C86846 /* opensanssemibold.ttf in Resources */,
 				05394D55281C53A800D3A22E /* enhance.png in Resources */,
+				0551672528572B3200C86846 /* ralewayblackitalic.ttf in Resources */,
+				0551671728572B3200C86846 /* ralewaybold.ttf in Resources */,
+				0551672D28572B3200C86846 /* ralewayitalic.ttf in Resources */,
+				0551673128572B3200C86846 /* ralewaysemibold.ttf in Resources */,
+				0551671C28572B3200C86846 /* opensanslightitalic.ttf in Resources */,
 				05394D92281C541A00D3A22E /* WeScan-Banner.jpg in Resources */,
 				05394D54281C53A800D3A22E /* enhance@2x.png in Resources */,
+				0551672A28572B3200C86846 /* ralewayextrabolditalic.ttf in Resources */,
+				0551673328572B3200C86846 /* ralewaythinitalic.ttf in Resources */,
+				0551673028572B3200C86846 /* ralewaybolditalic.ttf in Resources */,
+				0551671E28572B3200C86846 /* opensanssemibolditalic.ttf in Resources */,
+				0551671828572B3200C86846 /* ralewayblack.ttf in Resources */,
+				0551672128572B3200C86846 /* opensansextrabold.ttf in Resources */,
+				0551672628572B3200C86846 /* ralewaymediumitalic.ttf in Resources */,
+				0551672C28572B3200C86846 /* opensansitalic.ttf in Resources */,
 				05394CFA281C4D0400D3A22E /* Assets.xcassets in Resources */,
 				05394CF8281C4CEF00D3A22E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66290DBB1C3CC8B0B7898B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scannerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB674FF52754BA6BA7D8F7A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scannerApp/Pods-scannerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scannerApp/Pods-scannerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scannerApp/Pods-scannerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05394CE9281C4CEF00D3A22E /* Sources */ = {
@@ -472,6 +708,7 @@
 				05394D0F281C52B200D3A22E /* CaptureSession+Orientation.swift in Sources */,
 				0535A717281D3E9800FBFD99 /* EditVC.swift in Sources */,
 				05394D25281C539300D3A22E /* ReviewViewController.swift in Sources */,
+				0515EAC12853706700575C10 /* ReusableToolbar.swift in Sources */,
 				05394D1F281C538800D3A22E /* ShutterButton.swift in Sources */,
 				05F61807282BC35200B32571 /* UIImage+SFSymbol.swift in Sources */,
 				05394CF5281C4CEF00D3A22E /* ViewController.swift in Sources */,
@@ -480,32 +717,44 @@
 				05F61806282BC35200B32571 /* UIImage+Utils.swift in Sources */,
 				05394D84281C53D200D3A22E /* VisionRectangleDetector.swift in Sources */,
 				05394D1D281C538800D3A22E /* RectangleFeaturesFunnel.swift in Sources */,
+				0515EAC32853953F00575C10 /* ProfileVC.swift in Sources */,
 				05394CF1281C4CEF00D3A22E /* AppDelegate.swift in Sources */,
 				05F617FF282BC35200B32571 /* CGSize+Utils.swift in Sources */,
 				055A7E8428217ED300B0139C /* ImageCell.swift in Sources */,
+				053A22CD28564C1A00D28205 /* BuyersCell.swift in Sources */,
 				05394D0E281C52B200D3A22E /* CaptureSession+Flash.swift in Sources */,
+				055166F7285726A600C86846 /* ProfileTableViewControllerDelegate.swift in Sources */,
+				054B6B2D28520863005FE558 /* StartVC.swift in Sources */,
 				05394D87281C53D200D3A22E /* Quadrilateral.swift in Sources */,
 				05394D22281C538800D3A22E /* ScannerViewController.swift in Sources */,
 				05394D1E281C538800D3A22E /* CaptureSessionManager.swift in Sources */,
 				05F617FE282BC35200B32571 /* CGPoint+Utils.swift in Sources */,
 				05F61801282BC35200B32571 /* CIImage+Utils.swift in Sources */,
 				05394D21281C538800D3A22E /* FocusRectangleView.swift in Sources */,
+				05E56FF12854B7D400EFA634 /* CompareVC.swift in Sources */,
 				05394D59281C53AF00D3A22E /* CaptureDevice.swift in Sources */,
 				05394D5C281C53B900D3A22E /* ImageScannerController.swift in Sources */,
 				05394D79281C53CB00D3A22E /* ZoomGestureController.swift in Sources */,
 				05394D7A281C53CB00D3A22E /* EditScanViewController.swift in Sources */,
 				0535A71D281D561700FBFD99 /* MultiPageVC.swift in Sources */,
 				05394D83281C53D200D3A22E /* Error.swift in Sources */,
+				055166F3285715F500C86846 /* BuyersVC.swift in Sources */,
 				05F61803282BC35200B32571 /* CGRect+Utils.swift in Sources */,
+				054B6B3328522C2F005FE558 /* FirstTableVC.swift in Sources */,
 				05F61802282BC35200B32571 /* CGAffineTransform+Utils.swift in Sources */,
+				055166F52857232F00C86846 /* SuppliersVC.swift in Sources */,
 				05394D10281C52B200D3A22E /* CaptureSession.swift in Sources */,
 				05394D5A281C53AF00D3A22E /* Transformable.swift in Sources */,
 				05394D85281C53D200D3A22E /* CIRectangleDetector.swift in Sources */,
 				05F617FD282BC35200B32571 /* AVCaptureVideoOrientation+Utils.swift in Sources */,
 				0548EBC328226B2C00E129C8 /* RotateAndZoomVC.swift in Sources */,
 				0548EBC52822A09000E129C8 /* ShowPDF.swift in Sources */,
+				053A22C92856401F00D28205 /* CheckBox.swift in Sources */,
+				0515EAC528539FC100575C10 /* SecondTableVC.swift in Sources */,
 				05394D20281C538800D3A22E /* CameraScannerViewController.swift in Sources */,
 				05F61805282BC35200B32571 /* UIImage+Orientation.swift in Sources */,
+				053A22CB285641D100D28205 /* IbanVC.swift in Sources */,
+				053A22C72856257C00D28205 /* CompareCell.swift in Sources */,
 				0535A719281D494200FBFD99 /* ReviewVC.swift in Sources */,
 				05F61804282BC35200B32571 /* Array+Utils.swift in Sources */,
 			);
@@ -683,6 +932,7 @@
 		};
 		05394D02281C4D0400D3A22E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB89A48F2A86B9A25C7BAE08 /* Pods-scannerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,6 +961,7 @@
 		};
 		05394D03281C4D0400D3A22E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C1241566F540B60F30257E /* Pods-scannerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
