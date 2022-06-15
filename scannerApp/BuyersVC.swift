@@ -15,6 +15,8 @@ class BuyersVC: UIViewController, UITableViewDataSource {
     @IBOutlet weak var notBlockedButton: CheckBox!
     @IBOutlet weak var tableView: UITableView!
     
+    var companiesHealth: [Company]?
+    
     var niz1 = ["A1 Hrvatska", "Grafika", "KING d.o.o."]
     let niz2 = ["Prihod 10", "Prihod 20", "Prihod 30"]
     let niz = ["redEllipse", "greenEllipse", "yellowEllipse"]

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     let Your_api = "jksdxjjfsdkhxyffiudfvhxnndueewpefodkcm439tufjifoas9"
     let user_eMail = "test1@email.com"
     let user_IMEI = "imei1"
+    var companiesHealth: [Company]?
     
     let buttonAttributes: [NSAttributedString.Key: Any] = [
           .font: UIFont.systemFont(ofSize: 18),
@@ -26,10 +27,9 @@ class ViewController: UIViewController {
         let url = "https://mojeuredproxy-test.moj-eracun.hr/api/BI/Subject_SubjectHealthConfiguration/\(user_eMail)/\(user_IMEI)"
         let headers: HTTPHeaders = [ "ApiKey" : "\(Your_api)"]
         
-        let request = AF.request(url, method: .get, headers: headers)
-        
-        request.responseDecodable(of: [Company].self) { (response) in
+        AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: [Company].self) { (response) in
             guard let companies = response.value else { return }
+            self.companiesHealth = companies
             for i in companies {
                 print("Id:", i.id)
             }
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func idiNaStart(_ sender: UIButton) {
-        guard let startView = self.storyboard?.instantiateViewController(withIdentifier: "StartVC") else { return }
+        guard let startView = self.storyboard?.instantiateViewController(withIdentifier: "StartVC") as? StartVC else { return }
         startView.modalPresentationStyle = .fullScreen
         self.present(startView, animated: true, completion: nil)
     }
